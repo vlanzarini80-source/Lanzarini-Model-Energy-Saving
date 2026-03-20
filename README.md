@@ -71,6 +71,7 @@ The following charts compare the **Lanzarini Model (Geodesic Flow)** against sta
 * **Thermal Stability:** The Lanzarini Model reduces average GPU operational temperature by **~20°C**, achieving a **58% net energy saving** through entropy gradient optimization.
 * **Faster Convergence:** By following a minimum-dissipation geodesic path, the model reaches the loss target **34% faster** than Euclidean gradient descent.
 * 
+![Benchmark Risparmio Energetico](benchmarks_lanzarini.png)
 
 Methodology
 This framework is the result of an AI-Assisted Research process, combining quantum geometry intuitions with neural optimization simulations."

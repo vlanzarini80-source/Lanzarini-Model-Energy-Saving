@@ -1,0 +1,42 @@
+OPEN FOR PLANET - PUBLIC LICENSE v1.0
+Official Trademark: Lanzarini Model
+Original Author: Valentino Lanzarini
+Release Date: 15 March 2026
+
+1. PATERNITY AND OWNERSHIP
+This software, known as the "Lanzarini Model" (including the W-state mapping, 
+Riemann Zeta optimization, and Geodetic-Entropic gradient algorithms), 
+is the intellectual property of Valentino Lanzarini. 
+Official Discovery Date: 15 March 2026.
+
+2. "OPEN FOR PLANET" PRINCIPLES
+This license is granted under the "Open for Planet" framework. 
+The software is provided for the primary purpose of:
+- Reducing global energy consumption in Data Centers.
+- Optimizing AI thermal dissipation (Target: 5.01 TWh/year saving).
+- Transforming dissipative computation into optimized geodetic movement.
+
+3. PERMITTED USE
+Permission is hereby granted, free of charge, to any person or organization 
+obtaining a copy of this software to study, test, and use the model 
+for research and environmental sustainability purposes.
+
+4. MANDATORY ATTRIBUTION
+Any redistribution, derivative work, or commercial integration must 
+prominently credit "Valentino Lanzarini" as the original author and 
+reference the "Lanzarini Model" and "Open for Planet" trademark.
+
+5. GREEN CERTIFICATION
+The use of this model can be claimed as a "Green AI Certification" for 
+data centers, provided that the energy saving of ~34-58% is 
+empiricamente verified using the provided Geodetic Kernel.
+
+6. RESTRICTIONS
+Unauthorized commercial exploitation without explicit agreement or 
+removal of the original paternity "LANZARINI_Φ_2.99_Σ307" is strictly prohibited.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, 
+EXPRESS OR IMPLIED. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, 
+DAMAGES OR OTHER LIABILITY.
+
+Copyright (c) 2026 Valentino Lanzarini. All rights reserved.

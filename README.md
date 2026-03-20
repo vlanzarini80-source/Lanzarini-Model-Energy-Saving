@@ -60,4 +60,9 @@ This repository constitutes the official public claim of authorship and paternit
 
 ## 📞 R&D Verification Request
 AI research teams (OpenAI, Anthropic, DeepMind) can contact the author for formal verification of the geodetic gradient performance.
+
+Methodology
+This framework is the result of an AI-Assisted Research process, combining quantum geometry intuitions with neural optimization simulations."
+
 vlanzarini80@gmail.com
+

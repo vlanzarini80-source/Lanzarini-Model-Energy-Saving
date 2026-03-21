@@ -31,3 +31,33 @@ def main():
 if __name__ == "__main__":
     main()
 
+"""
+LANZARINI LEGAL SHIELD - LICENSE DISPLAY MODULE
+Author: Valentino Lanzarini
+Purpose: Mandatory License Acknowledgment for 5% Royalty
+"""
+
+def display_lanzarini_license():
+    license_text = """
+    ============================================================
+    LANZARINI MODEL - OPEN FOR PLANET LICENSE (OFP-L) v1.0
+    Copyright (c) 2026 Valentino Lanzarini. All rights reserved.
+    
+    COMMERCIAL TERMS:
+    1. Mandatory 5% Royalty on net energy savings.
+    2. Applicable to all entities with >1M Euro revenue.
+    3. Global Energy Saving Target: 5.01 TWh/year.
+    4. Verified Efficiency: 30.40%.
+    
+    By running this engine, you agree to these financial terms.
+    For licensing: v.lanzarini@ofp.tech
+    ============================================================
+    """
+    print(license_text)
+
+# Integrazione nel main
+if __name__ == "__main__":
+    display_lanzarini_license()
+    # Qui il codice prosegue con l'avvio del motore...
+
+

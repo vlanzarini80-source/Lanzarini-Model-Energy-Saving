@@ -60,4 +60,6 @@ if __name__ == "__main__":
     display_lanzarini_license()
     # Qui il codice prosegue con l'avvio del motore...
 
+Contact the author via GitHub for Commercial Agreements.
+valentino Lanzarini 
 

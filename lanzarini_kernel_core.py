@@ -7,7 +7,7 @@ License: Open for Planet (OFP-L)
 # Importiamo tutta la logica dal file engine che hai appena creato
 from lanzarini_engine import *
 
-def main():
+    def main():
     # 1. Inizializzazione parametri Lanzarini
     N = 128            # Dimensioni (Target Chip LP-1)
     classical_cost = 100 # Benchmark Wh

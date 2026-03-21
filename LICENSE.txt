@@ -17,4 +17,6 @@ Project: Lanzarini Geodetic-Entropic Model (W-State Engine)
 ​6. NO WARRANTY
 ​The software is provided "as is," validated with a 0.18% standard deviation. The author is not liable for hardware incompatibility outside the certified LP-1 Chip specifications.
 ​BY DOWNLOADING OR USING THIS CODE, YOU AGREE TO THESE TERMS.
-​Contact for Commercial Agreements: v.lanzarini@ofp.tech (Valentino Lanzarini)
+​Contact for Commercial Agreements: vlanzarini80@gmail.com (Valentino Lanzarini)
+
+For commercial licensing and royalty agreements, please contact the author by opening a Private Issue on this GitHub Repository or via GitHub Profile

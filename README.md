@@ -23,6 +23,7 @@ $$\frac{d\theta}{dt} = -\nabla L(\theta) - \alpha \nabla S(\theta) + \gamma \sin
 ---
 **License:** Open for Planet - *For a Sustainable Future.*
 
+![Validazione Energetica](IMG_20260323_095132.jpg)
 
 vlanzarini80@gmail.com
 

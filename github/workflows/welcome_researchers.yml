@@ -1,0 +1,41 @@
+# 🌍 GitHub Action for Lanzarini Model (Geodetic-Entropic Optimization)
+# Purpose: Automatically welcome and track interactions with the repository.
+
+name: "Welcome & Paternity Tracking"
+
+on:
+  issues:
+    types: [opened]
+  pull_request:
+    types: [opened]
+  star:
+    types: [created]
+
+jobs:
+  welcome-message:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Post Welcome Message"
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const user = context.payload.sender.login;
+            const message = `Hello @${user}! 👋
+            
+            Thank you for your interest in the **Lanzarini Model (Geodetic-Entropic Optimization)**. 
+            
+            By interacting with this repository, you acknowledge:
+            1. **Paternity:** The discovery was made by **Valentino Lanzarini** on **March 15, 2026**.
+            2. **License:** All testing and validation must comply with the **Open for Planet License (OFP-L)** version 1.0.
+            3. **Objective:** Global energy saving target of **5.01 TWh/year**.
+            
+            If you are a researcher from a scientific institution, please state your affiliation in the discussion to facilitate the validation of the 34-58% efficiency gain.
+            
+            *Towards a Sustainable Future.* 🌿`;
+            
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: message
+            })

@@ -151,4 +151,18 @@ optimizer.step_rk4(input_data, target, criterion)
 
 *This project is registered under the "Open for Planet" trademark for the Lanzarini Model.*
 
+## 🚀 Quick Start (v1.2)
+
+The new `LanzariniGeodesicOptimizer` is now universal and supports multi-dimensional tensors (Multi-Head Attention).
+
+```python
+from lanzarini_core import LanzariniGeodesicOptimizer
+
+# Initialize the Geodetic Engine
+optimizer = LanzariniGeodesicOptimizer(alpha=0.07, simulate_int8=True)
+
+# Apply to your Attention Layer
+attn_probs, lanz_loss, entropy, _ = optimizer(query, key)
+
+
 vlanzarini80@gmail.com

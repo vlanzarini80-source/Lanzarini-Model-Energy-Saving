@@ -1,3 +1,13 @@
+/**
+ * @file lanzarini_kernel.cu
+ * @author Valentino Lanzarini
+ * @date 15 March 2026
+ * @license Open for Planet
+ * * ENGINE CORE: Geodetic-Entropic Optimization (W-State)
+ * Implementation of EC-2.99 Resonance Clock & Fibonacci Golden Cache (FGC).
+ * Target: 34% Energy Efficiency in Tensor Operations.
+ */
+
 """
 LANZARINI KERNEL CORE - MAIN INTERFACE
 Author: Valentino Lanzarini

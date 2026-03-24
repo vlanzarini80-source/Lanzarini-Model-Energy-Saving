@@ -163,6 +163,3 @@ optimizer = LanzariniGeodesicOptimizer(alpha=0.07, simulate_int8=True)
 
 # Apply to your Attention Layer
 attn_probs, lanz_loss, entropy, _ = optimizer(query, key)
-
-
-vlanzarini80@gmail.com

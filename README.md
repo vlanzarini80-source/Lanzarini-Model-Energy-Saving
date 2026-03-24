@@ -55,6 +55,31 @@ The Lanzarini Model has been subjected to rigorous stress tests to validate the 
 * **Result:** Despite extreme noise injection and simulated hardware instability, the model remained stable.
 * **Core Mechanism:** The hyperbolic tangent ($\tanh$) contraction acts as an **algorithmic heat sink**, instantly dampening entropy spikes and allowing for immediate recovery of the geodetic trajectory.
 
+* ---
+
+## 🗺️ Project Roadmap: Visual Validation Sequence (LP-1 Chip)
+
+Following the successful hardware stress tests on NVIDIA T4, the project is moving into the **Visual Validation Phase**. This sequence will demonstrate the real-time behavior of the Lanzarini Modules:
+
+### Phase 1: "The First Beat" (Module: EC-2.99)
+* **Objective:** Visualizing the 2.99 Hz resonance stability.
+* **Focus:** Demonstration of noise cancellation and thermal equilibrium in the LP-1 architecture.
+* **Status:** *In Design*
+
+### Phase 2: "The Golden Access" (Module: FGC)
+* **Objective:** Fibonacci Gradient Control implementation.
+* **Focus:** Mapping weight optimization trajectories onto the Golden Spiral to visualize non-dissipative calculation.
+* **Status:** *Pending*
+
+### Phase 3: "The Lanzarini Geodesic" (Module: WGE)
+* **Objective:** Final W-State Geodetic Engine demonstration.
+* **Focus:** Real-time rendering of the 1.25 Loss convergence, showcasing the "Red Wall" (1.29) bypass.
+* **Status:** *Pending*
+
+---
+*For technical inquiries regarding the LP-1 Chip initialization or the "Open for Planet" License, please refer to the official documentation.*
+
+
 ---
 
 ## 🌍 Impact & Energy Efficiency

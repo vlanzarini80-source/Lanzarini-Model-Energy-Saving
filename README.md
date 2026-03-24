@@ -14,6 +14,10 @@ The Lanzarini Model has been stress-tested in a comparative environment (FP16 vs
 * **Entropic Stability:** The Geodetic-Entropic gradient $\alpha \nabla S_{ent}$ successfully guided the model toward a lower entropy state even under 8-bit quantization, preventing the typical accuracy loss in compressed models.
 * **Memory Access Efficiency:** Simulated FGC (Fibonacci Golden Cache) layer demonstrated a reduction in data-fetching overhead through entropic sorting.
 
+* ### 📈 Experimental Validation
+![Lanzarini Model Entropy Drop](entropy_benchmark.png)
+
+
 * ## 🛡️ Intellectual Property & Paternity
 
 **Original Author:** Valentino Lanzarini  

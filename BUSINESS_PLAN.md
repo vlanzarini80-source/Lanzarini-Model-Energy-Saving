@@ -20,3 +20,4 @@ Activation: Secured via hardware-level signature LANZARINI_Φ_2.99_Σ307.
 Protocol: Full compliance with the March 18th Communication Protocol.
 Trademark: "Open for Planet" is an exclusive Lanzarini trademark.
 Official Business Strategy - Lanzarini Model".
+The Lanzarini Model is a self-sustaining climate financing system: energy savings are contractually converted into carbon capture initiatives.

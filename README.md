@@ -15,7 +15,7 @@ pip install -r requirements.txt
 
 # Execute the validation benchmark
 python test_lp1_performance.py
-
+```
 
 ## 📊 Validated Performance
 | Configuration | Energy Saving | Efficiency (COP) |

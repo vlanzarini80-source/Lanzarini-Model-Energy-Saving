@@ -15,7 +15,8 @@ The Lanzarini Model has been stress-tested in a comparative environment (FP16 vs
 * **Memory Access Efficiency:** Simulated FGC (Fibonacci Golden Cache) layer demonstrated a reduction in data-fetching overhead through entropic sorting.
 
 * ### 📈 Experimental Validation
-![Lanzarini Model Entropy Drop](entropy_benchmark.png)
+![Lanzarini Entropy Benchmark](lanzarini_entropy_benchmark_v1.2.png)
+
 
 
 * ## 🛡️ Intellectual Property & Paternity

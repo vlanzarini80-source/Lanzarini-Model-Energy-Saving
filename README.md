@@ -101,7 +101,29 @@ Following the successful hardware stress tests on NVIDIA T4, the project is movi
 * **Application:** Green Certification for high-performance computing (HPC) and sustainable AI.
 
 ---
+
+### 🚀 Technical Implementation (Python)
+
+The core of the **Lanzarini Model** is implemented in `lanzarini_engine.py`. This module utilizes a **4th Order Runge-Kutta (RK4)** integrator to manage weight dynamics as a resonant physical system rather than simple gradient descent.
+
+#### Key Features:
+* **Resonance Clock:** 2.99 Hz synchronization (EC-2.99 Protocol) to bypass dissipative local minima.
+* **Geodetic Gradient:** Scalar curvature $R(\theta)$ calculation to minimize the entropic path.
+* **LP-1 Quantization:** Native hardware compatibility for global energy reduction.
+
+#### Usage Example:
+```python
+from lanzarini_engine import LanzariniGeodeticOptimizer
+
+# Initialize the model with Lanzarini parameters
+# The 2.99 Hz frequency acts as the "Heartbeat" of the LP-1 chip
+optimizer = LanzariniGeodeticOptimizer(model, alpha=0.01, f=2.99)
+
+# Execute a high-efficiency geodetic optimization step
+# This reduces computational entropy and saves energy
+optimizer.step_rk4(input_data, target, criterion)
+```
+
 *This project is registered under the "Open for Planet" trademark for the Lanzarini Model.*
 
 vlanzarini80@gmail.com
-

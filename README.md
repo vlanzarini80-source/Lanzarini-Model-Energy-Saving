@@ -4,6 +4,19 @@
 ## 🚀 Vision
 The Lanzarini Model transforms AI computation from a dissipative process to an optimized geodetic movement. By integrating the **W-State** and **2.99 Hz Modulation**, the **LP-1 Chip** slashes energy consumption by **58% in INT8 mode**.
 
+## ⚡ Quick Start: Efficiency Validation
+
+To verify the **34% energy saving** on your local machine or server, run the following commands:
+
+```bash
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Execute the validation benchmark
+python test_lp1_performance.py
+
+
 ## 📊 Validated Performance
 | Configuration | Energy Saving | Efficiency (COP) |
 | :--- | :--- | :--- |

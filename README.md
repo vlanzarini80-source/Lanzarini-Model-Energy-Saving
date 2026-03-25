@@ -32,7 +32,7 @@ This is the indisputable evidence of the **Lanzarini Model**'s success. The foll
 
 ---
 
-# 🌍 Modello Lanzarini / LP-1: The Geodetic-Entropic Revolution
+# 🌍 Model Lanzarini / LP-1: The Geodetic-Entropic Revolution
 **Official Repository - Registered March 15, 2026** *Author: Valentino Lanzarini*
 
 ## 🚀 Vision

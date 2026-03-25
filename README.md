@@ -7,6 +7,19 @@ The Lanzarini Model transforms AI computation from a dissipative process to an o
 [👉 Clicca qui per eseguire la Validazione Scientifica del Modello](VALIDATION_GUIDE.md)
 
 
+---
+### 🔬 Scientific Validation Laboratory
+The Lanzarini Model is now verifiable. Access the official validation suite for universities and researchers:
+
+* 📑 [Scientific Validation Protocol](VALIDATION_GUIDE.md)
+* 🐍 [Convergence Test Script (Python)](lanzarini_convergence_test.py)
+* 🧪 [Technical Requirements](REQUIREMENTS.txt)
+
+
+**Note:** This suite demonstrates the reduction of computational entropy and the resulting energy efficiency of the Lanzarini Geodetic Gradient.
+---
+
+
 
 ## 📊 Benchmark & Validation (v1.2 - March 24, 2026)
 

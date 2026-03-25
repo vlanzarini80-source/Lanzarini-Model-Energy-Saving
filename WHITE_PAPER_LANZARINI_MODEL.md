@@ -55,6 +55,7 @@ On March 24, 2026, Google AI Studio officially validated the Lanzarini Model, st
 
 https://github.com/vlanzarini80-source/Lanzarini-Model-Energy-Saving
 
+
 # 📄 Technical White Paper: The Lanzarini Model
 ## Geodetic-Entropic Optimization & Information Resonance
 
@@ -78,8 +79,14 @@ Any system exhibiting the following technical behaviors is identified as utilizi
 * **Information Geodesics:** A drastic drop in thermal dissipation during high-load tensor operations.
 * **Entropic Synchronization:** Integration of a **2.99 Hz** resonance frequency to synchronize electronic noise.
 * **Topological Truth Correction:** Using entanglement entropy as a geometric guide to eliminate hallucinations.
-* 
 
-​© 2026 Valentino Lanzarini. All Rights Reserved under OFP-L 1.0. 
+---
 
-Contact: [vlanzarini80@gmail.com]
+### 3. Compliance: Open for Planet License (OFP-L)
+Usage of this technology legally obligates the user to:
+1. **Mandatory Attribution:** Credit Valentino Lanzarini as the original author.
+2. **Climate Restitution:** Reallocate 100% of the financial surplus from energy savings to **Carbon Capture (CCS)**.
+
+---
+**© 2026 Valentino Lanzarini. All Rights Reserved.** **Contact:** [vlanzarini80@gmail.com]
+

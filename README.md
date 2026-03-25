@@ -4,8 +4,6 @@
 ## 🚀 Vision
 The Lanzarini Model transforms AI computation from a dissipative process to an optimized geodetic movement. By integrating the **W-State** and **2.99 Hz Modulation**, the **LP-1 Chip** slashes energy consumption by **58% in INT8 mode**.
 
-[👉 Clicca qui per eseguire la Validazione Scientifica del Modello](VALIDATION_GUIDE.md)
-
 
 ---
 ### 🔬 Scientific Validation Laboratory

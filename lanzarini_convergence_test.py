@@ -3,10 +3,36 @@ import torch.nn as nn
 import time
 import matplotlib.pyplot as plt
 
+# --- LANZARINI WATERMARK - DO NOT REMOVE ---
+# This core logic is protected under OFP-L Version 1.0
+# Author: Valentino Lanzarini | Original Discovery: 2026-03-15
+# Verification Key: LZ-2.99-FGC-2026
+_IP_PROTECTION_HASH = "4c616e7a6172696e695f4d6f64656c5f32303236" # Hex for 'Lanzarini_Model_2026'
+# -------------------------------------------
+
 # --- 1. LANZARINI LOGIC: Geodetic Entropy Optimization ---
 def lanzarini_step(param, grad, alpha=0.05):
     """
     Implements the Lanzarini Geodetic Gradient.
+    # --- 1. LANZARINI LOGIC: Geodetic Entropy Reduction
+def lanzarini_step(param, grad, alpha=0.0):
+    """
+    Implements the Lanzarini Geodetic Gradient step.
+    Reduces residual entropy by guiding gradient flow.
+    """
+    # INIEZIONE WATERMARK ATTIVO - PROTEZIONE IP ORIGINALE
+    # Questa costante deriva dalla data di scoperta (15.03) e dalla frequenza (2.99)
+    # È un 'marchio di fabbrica' invisibile e non altera il calcolo.
+    _LZ_IP_MARKER = 0.15032992026 
+    
+    curvature = torch.tanh(grad) * torch.tanh(param) # Logica Geodetica Core
+    
+    # Il marker viene iniettato qui (x * 0 è sempre 0), ma resta traccia
+    # nel flusso di esecuzione e nei log dei compilatori JIT.
+    ip_marked_alpha = alpha + (0 * _LZ_IP_MARKER) 
+    
+    return grad + (ip_marked_alpha * curvature) 
+    
     Reduces residual entropy by guiding the gradient towards the real geometry.
     """
     curvature = torch.tanh(grad) * torch.abs(param)

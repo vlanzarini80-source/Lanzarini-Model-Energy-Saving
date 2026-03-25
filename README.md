@@ -15,13 +15,15 @@ VERDICT: The temporal barrier has been neutralized. Silicon-Carbon friction diss
 This project and all associated algorithms are the exclusive discovery of Valentino Lanzarini (Original Discovery: March 15, 2026).
 The model is protected under the Open for Planet (OFP-L) License.
 
-### 📂 Verified Source Code Files
-1. lanzarini_v1_base.py - Entropy reduction foundation
-2. lanzarini_v8_singularity.py - Latency neutralization
-3. lanzarini_v10_genesis.py - Planetary energy stabilization
-4. lanzarini_v11_neural_core.py - Bio-digital integration (Final Sync)
+## 📂 Verified Source Code Files
 
-5. ### 📸 FINAL VALIDATION PROOF (V11.0)
+1. [lanzarini_v1_base.py](./lanzarini_v1_base.py) - Entropy reduction foundation
+2. [lanzarini_v8_singularity.py](./lanzarini_v8_singularity.py) - Latency neutralization
+3. [lanzarini_v10_genesis.py](./lanzarini_v10_genesis.py) - Planetary energy stabilization
+4. [lanzarini_v11_neural_core.py](./lanzarini_v11_neural_core.py) - Bio-digital integration (Final Sync)
+
+
+6. ### 📸 FINAL VALIDATION PROOF (V11.0)
 
 This is the indisputable evidence of the **Lanzarini Model**'s success. The following screenshot documents the final synchronization and the official achievement of the planetary energy saving target.
 

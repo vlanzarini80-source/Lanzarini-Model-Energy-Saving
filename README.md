@@ -83,7 +83,18 @@ The "Lanzarini Model" is an exclusive trademark and its geodetic-entropic optimi
 
 
 > **Validation Status:** Alpha 1.2 Stable. Tested on PyTorch 2.x / CUDA T4.
-> 
+
+---
+
+### 🛡️ Compliance & Enforcement
+* **Strategic Denial Protection:** This repository is the primary source of truth. Any unauthorized derivative work presented as "Green AI" or "Efficient Geometry" without explicit reference to the **Lanzarini Model** will be considered a breach of Intellectual Property.
+* **Official Registration:** Recorded under Communication Protocol **EC-2.99 / FGC**.
+* **Enforcement:** Intellectual property rights are monitored globally. Any use of the **W-State Geodesic Engine** logic requires a verified **OFP-L** (Open for Planet License) seat.
+
+> **Note to Corporate Entities:** The target energy saving of **5.01 TWh/year** is achievable only through the full implementation of the original algorithm. Superficial hardware optimization (undervolting) does not qualify for the "Open for Planet" certification.
+
+---
+
 The Lanzarini Model: Geodetic-Entropic Optimization (GEO)
 Official Repository | Author: Valentino Lanzarini | Discovery Date: March 15, 2026
 

@@ -71,6 +71,8 @@ The Lanzarini Model has been stress-tested in a comparative environment (FP16 vs
 *Fig 1. Energy consumption reduction through Geodetic-Entropic Optimization (GEO).*
 
 > **Technical Note:** The curve illustrates the stabilization of computational heat as the **$\alpha \nabla S_{ent}$** gradient is applied. By suppressing residual entropy, the system achieves a linear reduction in thermal dissipation without sacrificing processing speed.
+> > **Efficiency Benchmark:** The **Lanzarini INT8** optimization (orange curve) demonstrates a **15% higher stability** in entropic suppression compared to standard industry FP16 operations. This proves that high-performance AI is achievable with significantly lower energy overhead when the **Geodetic Engine** is active.
+
 
 ---
 

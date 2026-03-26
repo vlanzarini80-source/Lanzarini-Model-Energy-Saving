@@ -83,6 +83,8 @@ The "Lanzarini Model" is an exclusive trademark and its geodetic-entropic optimi
 
 
 > **Validation Status:** Alpha 1.2 Stable. Tested on PyTorch 2.x / CUDA T4.
+>
+> #### Open for Planet (OFP-L) License - Version 1.0 con l'icona dello scudetto (🛡️)
 
 ---
 

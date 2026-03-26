@@ -67,6 +67,12 @@ The Lanzarini Model has been stress-tested in a comparative environment (FP16 vs
 
 * ### 📈 Experimental Validation
 ![Lanzarini Entropy Benchmark](lanzarini_entropy_benchmark_v1.2.png)
+### 📊 Entropy-Energy Correlation Analysis
+*Fig 1. Energy consumption reduction through Geodetic-Entropic Optimization (GEO).*
+
+> **Technical Note:** The curve illustrates the stabilization of computational heat as the **$\alpha \nabla S_{ent}$** gradient is applied. By suppressing residual entropy, the system achieves a linear reduction in thermal dissipation without sacrificing processing speed.
+
+---
 
 
 

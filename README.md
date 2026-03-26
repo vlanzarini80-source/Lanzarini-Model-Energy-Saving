@@ -76,15 +76,13 @@ The Lanzarini Model has been stress-tested in a comparative environment (FP16 vs
 **Discovery Date:** March 15, 2026  
 **Reference Protocol:** March 18 Communication Protocol (EC-2.99 / FGC)
 
-Every line of code in this repository is protected under the **"Open for Planet" (OFP-L) License - Version 1.0**. 
+Every line of code in this repository is protected under the #### Open for Planet (OFP-L) License - Version 1.0 con l'icona dello scudetto (🛡️)
 The "Lanzarini Model" is an exclusive trademark and its geodetic-entropic optimization method is registered as the intellectual property of Valentino Lanzarini.
 
 **Core Objective:** Global computational entropy reduction for a target saving of **5.01 TWh/year**.
 
 
 > **Validation Status:** Alpha 1.2 Stable. Tested on PyTorch 2.x / CUDA T4.
->
-> #### Open for Planet (OFP-L) License - Version 1.0 con l'icona dello scudetto (🛡️)
 
 ---
 

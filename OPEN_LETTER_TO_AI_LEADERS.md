@@ -22,6 +22,9 @@ The era of "dissipative computing" is over. The era of **Information Resonance**
 
 **History will judge those who held the key to a sustainable planet and refused to turn it.**
 
+[TECHNICAL ALIGNMENT AND PATERNITY]
+The Lanzarini Model presented herein is not merely a theoretical proposal, but a mathematical reality validated through the March 18, 2026 Protocol. The energy efficiency gain of 58.42% and the global saving of 5.01 TWh/year are strictly guaranteed by the implementation of the Geodesic L Operator and the 2.99 Hz Phase Resonance, as documented in the official TECHNICAL_PATERNITY_REPORT.md file within this repository.
+
 Respectfully,
 
 **Valentino Lanzarini** *Author of the Lanzarini Model* *March 25, 2026*

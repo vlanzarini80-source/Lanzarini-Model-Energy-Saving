@@ -15,7 +15,8 @@ To identify the "Resonance Frequency" of the model, we performed a scan of the e
 - **Lanzarini LP-1 (Alpha 5.0e-5):** 77.82% Accuracy
 - **Stability Gain:** +1.55%
 
-![Geodetic Resonance Scan Chart](scan_risonanza.png)
+![Geodetic Resonance Scan Chart](download%20(9).png)
+
 
 ## Technical Proof of "Logical Silence"
 The data shows that the term Alpha * Entropy_Grad acts as a geometric filter. While standard models lose accuracy due to "Silicon Noise," the LP-1 Model maintains a geodetic trajectory, effectively rejecting entropy. 

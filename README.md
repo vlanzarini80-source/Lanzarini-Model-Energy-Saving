@@ -273,3 +273,6 @@ optimizer = LanzariniGeodesicOptimizer(alpha=0.07, simulate_int8=True)
 
 # Apply to your Attention Layer
 attn_probs, lanz_loss, entropy, _ = optimizer(query, key)
+
+```
+This repository is protected by the OFP-L Climate Audit Shield. Any industrial training performed without official CCS contribution reporting is a direct violation of the Lanzarini Model Intellectual Property (Ref: LANZARINI-XAI-20260330-001).

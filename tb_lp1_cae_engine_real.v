@@ -1,4 +1,4 @@
-// ==========================================
+==========================================
 // Testbench: Validazione Dinamica LP-1 (v0.4)
 // Genera log di confronto In/Out/Gating per prova tecnica
 // ==========================================

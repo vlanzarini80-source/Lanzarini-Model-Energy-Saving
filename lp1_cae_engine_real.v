@@ -1,12 +1,11 @@
 // ==========================================
-// LP-1 CAE Engine: Real Entropy Gating (v0.4)
+// LP-1 CAE Engine: Real Entropy Gating (v0.4.1)
 // Author: Valentino Lanzarini | 31 Marzo 2026
-// License: Open for Planet (OFP-L) v1.0
-// Logic: Real-Time Hamming Distance Entropy Analysis
+// Status: RTL Gold Master - Fixed Timing
 // ==========================================
 
 module lp1_cae_engine_real #(
-    parameter THRESHOLD = 5 // Soglia attivazione gating (Bit-Toggle)
+    parameter THRESHOLD = 5 // Soglia di bit che cambiano (Entropia)
 )(
     input  wire        clk,
     input  wire        rst_n,
@@ -20,34 +19,38 @@ module lp1_cae_engine_real #(
     integer i;
     reg entropy_high;
 
-    // --- Analisi Entropia (Distanza di Hamming) ---
+    // --- Calcolo dell'Entropia (Hamming Distance) ---
+    // Logica combinatoria istantanea
     always @(*) begin
         diff_count = 0;
         for (i = 0; i < 32; i = i + 1) begin
             if (grad_in[i] != last_grad[i])
                 diff_count = diff_count + 1;
         end
-        // Se la variazione bit-to-bit supera la soglia -> Entropia Alta
+        // Se cambiano troppi bit, l'entropia è alta -> ATTIVA GATING
         entropy_high = (diff_count > THRESHOLD);
     end
 
-    // --- Gating Intelligente (Data-Hold Mode) ---
+    // --- Logica di Gating Data-Driven ---
     always @(posedge clk or negedge rst_n) begin
         if (!rst_n) begin
             adjusted_grad <= 32'b0;
             last_grad     <= 32'b0;
         end else begin
-            last_grad <= grad_in; // Memorizza lo stato precedente
+            last_grad <= grad_in; // Memorizza per il prossimo ciclo
             if (entropy_high) begin
-                // Stato di HOLD: Nessuna commutazione per risparmio energetico
+                // Entropia alta: Mantieni il dato precedente (HOLD) 
+                // per azzerare lo switching energetico
                 adjusted_grad <= adjusted_grad; 
             end else begin
-                // Stato ATTIVO: Passa il gradiente con maschera LSB
+                // Entropia bassa: Passa il gradiente (con maschera LSB)
                 adjusted_grad <= grad_in & 32'hFFFFFFFC;
             end
         end
     end
 
+    // Segnale di controllo esterno
     assign gate_active = entropy_high;
 
 endmodule
+

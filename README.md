@@ -297,6 +297,11 @@ The hardware logic has been rigorously tested and validated using **EDA Playgrou
 ![Hardware Validation](validation_waveform.jpg)
 *The image above shows the actual EPWave digital signals from the LP-1 core simulation, providing undeniable proof of the model's functionality.*
 
+### Simulation System Log
+![Simulation Log](simulation_log.jpg)
+*Technical log confirming successful Icarus Verilog compilation and execution on March 31, 2026.*
+
+
 ## Intellectual Property & Licensing
 All technical logic and coefficients are protected under the **Open for Planet License (OFP-L)**. 
 - Commercial use is strictly linked to Carbon Capture and Storage (CCS) funding.

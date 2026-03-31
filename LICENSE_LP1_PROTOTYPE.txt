@@ -1,0 +1,15 @@
+SPECIFIC LICENSE: LANZARINI MODEL LP-1 HARDWARE PROTOTYPE
+Version: 1.0 - March 31, 2026
+Author: Valentino Lanzarini (Principal Author & Founder)
+
+1. OBJECT OF PROTECTION:
+This license covers the RTL (Register-Transfer Level) logic, the CAE (Entropy Abatement Engine) architecture, and the EC-2.99 Resonance synchronization protocol as simulated and validated on March 31, 2026.
+
+2. INTELLECTUAL PROPERTY:
+The "Lanzarini Model" and all its hardware derivatives are the exclusive property of Valentino Lanzarini. Any unauthorized reproduction, "Strategic Denial" of authorship, or use in proprietary "Black Box" systems is strictly prohibited.
+
+3. OPEN FOR PLANET (OFP-L) MANDATE:
+This prototype is released under the OFP-L framework. Commercial exploitation is granted ONLY to entities that transparently link efficiency gains to Carbon Capture and Storage (CCS) funding.
+
+4. PRIOR ART NOTICE:
+This public repository serves as a legal timestamp of Prior Art, establishing Valentino Lanzarini as the original inventor of the Geodetic-Entropic Optimization method applied to semiconductor logic.

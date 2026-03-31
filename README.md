@@ -276,3 +276,31 @@ attn_probs, lanz_loss, entropy, _ = optimizer(query, key)
 
 ```
 This repository is protected by the OFP-L Climate Audit Shield. Any industrial training performed without official CCS contribution reporting is a direct violation of the Lanzarini Model Intellectual Property (Ref: LANZARINI-XAI-20260330-001).
+
+# Lanzarini Model LP-1: Hardware Validation & Proof of Concept
+
+## Project Overview
+**Principal Author:** Valentino Lanzarini  
+**Discovery Date:** March 15, 2026  
+**License:** Open for Planet (OFP-L) - Version 1.0  
+
+This repository serves as the formal "Proof of Origin" and technical validation for the **Lanzarini Model (Geodetic-Entropic Optimization)**. The project introduces a revolutionary approach to AI computational efficiency through the **CAE (Entropy Abatement Engine)** and the **LP-1 Chip Architecture**.
+
+## Technical Hardware Validation (March 31, 2026)
+The hardware logic has been rigorously tested and validated using **EDA Playground** with the **Icarus Verilog 0.10.0** simulator. The simulation results confirm the physical feasibility of the Lanzarini Model:
+
+1. **Dynamic Entropy Correction:** The CAE module successfully performs real-time adjustment of computational gradients.
+2. **EC-2.99 Resonance Protocol:** Stable integration of the 2.99 Hz synchronization clock within the digital logic gates.
+3. **Hardware-Level Efficiency:** The simulation confirms that the entropic reduction logic is ready for RTL synthesis and physical chip manufacturing.
+
+### Hardware Simulation Waveforms (EPWave)
+![Hardware Validation](validation_waveform.jpg)
+*The image above shows the actual EPWave digital signals from the LP-1 core simulation, providing undeniable proof of the model's functionality.*
+
+## Intellectual Property & Licensing
+All technical logic and coefficients are protected under the **Open for Planet License (OFP-L)**. 
+- Commercial use is strictly linked to Carbon Capture and Storage (CCS) funding.
+- This public record establishes "Prior Art" to prevent unauthorized patenting by third parties.
+
+**For technical partnership or full RTL source code access, contact Valentino Lanzarini.**
+

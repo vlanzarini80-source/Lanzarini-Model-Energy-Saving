@@ -74,3 +74,4 @@ The Lanzarini Model is not a "maintenance guide" for laptops. It is the Logical 
 Author: Valentino Lanzarini
 Reference Protocol: EC-2.99 / FGC / W-State
 Original Discovery: March 15, 2026
+vlanzarini80@gmail.com

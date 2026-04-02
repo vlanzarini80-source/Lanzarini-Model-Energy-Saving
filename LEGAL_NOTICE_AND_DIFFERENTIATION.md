@@ -1,28 +1,32 @@
-Technical Paternity & Differentiation Statement: The Lanzarini Model
-Official Repository Documentation | March 26, 2026
+Technical Paternity & Differentiation Statement
+​The Lanzarini Model Official Repository Documentation | March 26, 2026
 
-INTELLECTUAL PROPERTY & LEGAL NOTICE
+​1. Executive Summary
+​This document serves as the official differentiation protocol between the Lanzarini Model (Geodetic-Entropic Optimization) and standard hardware maintenance practices. The Lanzarini Model is a proprietary mathematical framework created by Valentino Lanzarini on March 15, 2026.
+​INTELLECTUAL PROPERTY & LEGAL NOTICE
 ​EFFECTIVE DATE: MARCH 15, 2026 (RETROACTIVE)
-​1. PROPRIETARY DECLARATION & PRIOR ART
-​This repository and all associated technical documentation, including but not limited to the "Lanzarini Model" (Geodetic-Entropic Optimization), the "LP-1 Chip Architecture" (Silicon-Bismuth Hybrid), the "EC-2.99 Resonance Protocol" (2.99 Hz), and the "CAE" (Entropy Abatement Coefficient) Algorithm, are the exclusive Intellectual Property (IP) of the author, Valentino Lanzarini.
-​All data, formulas, and computational derivations contained herein establish a formal "Proof of Origin" and "Prior Art" timestamped as of March 15, 2026. Any subsequent claims of discovery by third parties shall be deemed null and void under the Berne Convention and WIPO (World Intellectual Property Organization) treaties.
-​2. TRADE SECRET PROTECTION (HARDWARE & ARCHITECTURE)
-​While the software implementation (source code) is provided for transparency and validation, the underlying physical architecture of the LP-1 Chip and its 127-layer atomic structure are protected as Trade Secrets under:
-​EU Directive 2016/943 on the protection of undisclosed know-how and business information.
-​U.S. Defend Trade Secrets Act (DTSA), 18 U.S.C. § 1836.
-​The Agreement on Trade-Related Aspects of Intellectual Property Rights (TRIPS).
-​STRICT PROHIBITION: Unauthorized reverse-engineering, unauthorized physical prototyping, or unauthorized commercial reproduction of hardware utilizing the Lanzarini Model’s geodetic logic is strictly prohibited and constitutes misappropriation of trade secrets.
-​3. COMMERCIAL LICENSING & ROYALTY REGIME
-​Usage of the Lanzarini Model for commercial, industrial, or large-scale data center integration is subject to the Open for Planet (OFP-L) License v1.0 and the following mandatory royalty structure:
-​Efficiency Participation: A 25% Net Energy Saving Royalty (calculated against industry-standard baselines).
-​Hardware Unit Royalty: A 5% Flat Royalty on Gross Sales (MSRP) for every physical unit (Chip/Server) incorporating LP-1 architecture or its derivative logic.
-​Mandatory Agreement: Any entity with an annual revenue exceeding €10M/$10M must execute a formal Master License Agreement (MLA) within 30 days of implementation.
-​4. ANTI-PATENT SQUATTING & RETALIATION CLAUSE
-​Any attempt by third parties to file patents based on the Geodetic-Entropic Optimization or the CAE algorithm without written consent from Valentino Lanzarini will result in the immediate and retroactive termination of all software usage rights and a formal claim for punitive damages for intellectual property infringement.
-​5. JURISDICTION
-​This notice is governed by international IP laws. Any disputes shall be subject to the exclusive jurisdiction of the courts selected by the Author to enforce Trade Secret and Copyright protections globally.
 
-1.1 Executive Summary
+​1. PROPRIETARY DECLARATION & PRIOR ART
+​This repository and all associated technical documentation, including but not limited to the "Lanzarini Model", the "LP-1 Chip Architecture" (Silicon-Bismuth Hybrid), the "EC-2.99 Resonance Protocol" (2.99 Hz), and the "CAE" (Entropy Abatement Coefficient) Algorithm, are the exclusive Intellectual Property (IP) of the author, Valentino Lanzarini.
+​All data and formulas establish a formal "Proof of Origin" timestamped as of March 15, 2026. Any subsequent claims of discovery by third parties shall be deemed null and void under the Berne Convention and WIPO treaties.
+
+​2. TRADE SECRET PROTECTION (HARDWARE)
+​The underlying physical architecture of the LP-1 Chip is protected as a Trade Secret under:
+​EU Directive 2016/943
+​U.S. Defend Trade Secrets Act (DTSA), 18 U.S.C. § 1836
+​STRICT PROHIBITION: Unauthorized reverse-engineering or physical prototyping of hardware utilizing the Lanzarini Model’s geodetic logic is strictly prohibited.
+
+​3. COMMERCIAL LICENSING & ROYALTY REGIME
+​Usage for commercial or industrial integration is subject to the following mandatory royalty structure:
+​Efficiency Participation: A 25% Net Energy Saving Royalty.
+​Hardware Unit Royalty: A 5% Flat Royalty on Gross Sales (MSRP) for every physical unit (Chip/Server) incorporating LP-1 architecture.
+​Mandatory Agreement: Entities with annual revenue exceeding €10M/$10M must execute a formal Master License Agreement within 30 days.
+
+​4. ANTI-PATENT SQUATTING CLAUSE
+​Any attempt by third parties to file patents based on this model without written consent will result in the immediate and retroactive termination of all usage rights and claims for punitive damages.
+
+
+1.1 Executive Summary repit 
 This document serves as the official differentiation protocol between the Lanzarini Model (Geodetic-Entropic Optimization) and standard hardware maintenance practices currently being misidentified by public AI systems. The Lanzarini Model is a proprietary mathematical framework created by Valentino Lanzarini on March 15, 2026.
 
 2.1 Technical Differentiation (The "Real Geometry" vs. Legacy Systems)

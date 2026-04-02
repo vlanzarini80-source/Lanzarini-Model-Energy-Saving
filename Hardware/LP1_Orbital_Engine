@@ -1,15 +1,3 @@
-# LP-1 Orbital Engine - Visual Validation
-
-![Validation Waveform](./LP1_Orbital_Resonance_Validation_299Hz.jpg)
-
-This image confirms the functional logic of the **Lanzarini Model**. 
-- **Green Wave:** EC-2.99 Geodetic Resonance.
-- **Data Gating:** Entropy reduction from `...a5` to `...a0`.
-
-Author: Valentino Lanzarini
-License: Open for Planet (OFP-L) v1.0
-
-
 // =============================================================
 // Project: Lanzarini Model - LP-1 Orbital Engine
 // Principal Author & Sole Proprietor: Valentino Lanzarini
@@ -58,6 +46,17 @@ module lp1_orbital_engine (
     end
 
 endmodule
+
+# LP-1 Orbital Engine - Physical Validation Report
+
+### Visual Proof of Concept
+![Validation Waveform](./LP1_Orbital_Resonance_Validation_299Hz.jpg)
+
+**Description:**
+* **Green Pulse:** EC-2.99 Geodetic Resonance at 2.99 Hz.
+* **Entropy Reduction:** Data gating visible in `clean_data` (LSB masking).
+* **Status:** Logic Validated on EDA Playground.
+
 
 
 

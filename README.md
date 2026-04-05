@@ -147,7 +147,8 @@ Read the full mandate here: [HUMANITY_CLAUSE.md](./HUMANITY_CLAUSE.md)
 
 🛠️ Technical Implementation
 For detailed manufacturing parameters, resonant frequencies, and lattice stabilization protocols, refer to the:
-TECHNICAL_SPECIFICATIONS.md
+refer to the: [TECHNICAL_SPECIFICATIONS.md](./TECHNICAL_SPECIFICATIONS.md)
+
 
 
 ## ⚡ Quick Start: Efficiency Validation

@@ -139,6 +139,11 @@ Status: Protected under OFP-L (Open for Planet License).
 
 Contact: For corporate certification and integration protocols, contact the author via official channels.
 
+⚖️ Ethical & Humanitarian Compliance
+This project is governed by the Lanzarini Humanity Clause. Any use of the LP-1 architecture, the 2.99 Hz resonance protocol, or the CAE algorithm for military or destructive purposes is strictly prohibited.
+Read the full mandate here: HUMANITY_CLAUSE.md
+
+
 ## ⚡ Quick Start: Efficiency Validation
 
 To verify the **34% energy saving** on your local machine or server, run the following commands:

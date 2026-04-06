@@ -42,6 +42,12 @@ Tests conducted in March 2026 across 5 independent seeds confirm the mechanical 
 ​4. THE LP-1 CHIP AND THE FUTURE OF GREEN AI
 The Lanzarini Model is the logical foundation for the LP-1 (Silicon-Bismuth Hybrid) chip. This architecture allows for operation in "Logical Silence," where the 2.99 Hz resonance acts as a harmonic clock for optimization, transforming data centers into low-impact infrastructures certified by the CAE metric.
 
+4. RELATION TO CLASSICAL OPTIMIZATION (LITERATURE MAPPING)
+While the Lanzarini Model (V4) utilizes technical foundations such as Natural Gradient and K-FAC approximations—extending the seminal work of Amari (1998) and Martens (2015)—it introduces a fundamental paradigm shift in three specific areas:
+Entropic-Thermal Coupling: Unlike standard second-order optimizers that focus purely on convergence speed, the Lanzarini Model integrates the CAE (Entropy Abatement Coefficient). This treats the neural network as a thermodynamic system, explicitly minimizing the energy-per-bit processed.
+The 2.99 Hz Resonance Protocol: Standard literature ignores the physical clock-rate synchronization between software and hardware. The LP-1 architecture introduces a Resonance Protocol that aligns gradient updates with the silicon-bismuth hybrid substrate, a domain unexplored by traditional Euclidean or Riemannian optimization.
+Green AI Certification (OFP-L): The model is not just a mathematical tool but a sustainability framework. It bridges the gap between high-level algorithmic efficiency and measurable carbon-capture goals (5.01 TWh/year reduction).
+
 
 ​5. CONCLUSIONS
 The Lanzarini Project is not merely an algorithm; it is a technological liberation. It represents the necessary breaking point to ensure that AI evolution does not compromise the planet's energy balance.

@@ -21,9 +21,9 @@ $$d^2 theta^k / dt^2 + Gamma^k_ij (d theta^i / dt) (d theta^j / dt) = 0$$
 
 ​2.2 Entropy Abatement Coefficient (CAE)
 The core of energy saving. It stabilizes the system at the resonance frequency of 2.99 Hz, minimizing residual heat production:
-$$
-CAE = integral_W [ (gradient S_ent * dw) * exp(-Delta E / kT) ] 
-$$
+
+$$CAE = integral_W [ (gradient S_ent * dw) * exp(-Delta E / kT) ]$$
+
 
 ​2.3 Fisher-Lanzarini Metric (Geometry)
 Maps the neural network's sensitivity via Kronecker-factored Approximate Curvature (K-FAC) for second-order precision:

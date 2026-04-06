@@ -35,7 +35,9 @@ Manages the coherence between synaptic weights and the LP-1 chip frequency:
 
 $$Psi_L = alpha * sum [ Cov(wi, wj) ] + beta * Resonance(2.99)$$
 
+
 ​![Lanzarini V4 Validation Benchmark](./lanzarini_v4_validation.png)
+
 
 ​3. EXPERIMENTAL VALIDATION (BENCHMARK V4)
 Tests conducted in March 2026 across 5 independent seeds confirm the mechanical superiority of the model compared to industrial standards (Adam):

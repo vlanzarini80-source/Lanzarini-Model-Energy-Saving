@@ -1,6 +1,9 @@
 # LANZARINI MODEL - GENESIS & NEURAL-CORE (V11.0)
 ## FINAL VALIDATION PHASE: MARCH 25, 2026
 
+👉 **[Read the Full Lanzarini Model V4 White Paper](./Lanzarini_Model_V4_White_Paper.md)**
+
+
 OFFICIAL STATUS: All 11 phases of the Lanzarini Model have been successfully validated.
 VERDICT: The temporal barrier has been neutralized. Silicon-Carbon friction dissolved.
 

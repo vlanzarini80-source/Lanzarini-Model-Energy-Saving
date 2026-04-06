@@ -16,7 +16,7 @@ The system is built upon four coordinated equational pillars:
 
 ​2.1 The Geodesic Equation (Motion)
 Defines the path of least resistance within the Riemannian manifold, ensuring that every weight update follows the curve of maximum efficiency:
-d^2 theta^k / dt^2 + Gamma^k_ij (d theta^i / dt) (d theta^j / dt) = 0
+$$d^2 theta^k / dt^2 + Gamma^k_ij (d theta^i / dt) (d theta^j / dt) = 0$$
 
 ​2.2 Entropy Abatement Coefficient (CAE)
 The core of energy saving. It stabilizes the system at the resonance frequency of 2.99 Hz, minimizing residual heat production:

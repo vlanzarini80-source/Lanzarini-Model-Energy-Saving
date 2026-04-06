@@ -27,7 +27,7 @@ $$CAE = integral_W [ (gradient S_ent * dw) * exp(-Delta E / kT) ]$$
 
 ​2.3 Fisher-Lanzarini Metric (Geometry)
 Maps the neural network's sensitivity via Kronecker-factored Approximate Curvature (K-FAC) for second-order precision:
-F_L = E [ (gradient_theta log p) * (gradient_theta log p)^T ]
+$$F_L = E [ (gradient_theta log p) * (gradient_theta log p)^T ]$$
 
 ​2.4 W-State Regularization (Synchronization)
 Manages the coherence between synaptic weights and the LP-1 chip frequency:

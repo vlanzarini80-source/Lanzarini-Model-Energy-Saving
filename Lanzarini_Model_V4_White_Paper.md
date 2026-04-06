@@ -49,6 +49,75 @@ Tests conducted in March 2026 across 5 independent seeds confirm the mechanical 
 The following implementation demonstrates the Geodetic Optimizer compared against Adam over 5 independent seeds. This code handles the Riemannian manifold navigation and the K-FAC (Kronecker-factored) Fisher blocks.
 
 
+import torch
+import torch.nn as nn
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Lanzarini Model: Geodetic Manifold Navigation logic
+class FisherBlock:
+    def __init__(self, in_dim, out_dim, damping=5e-3):
+        self.damping = damping
+        self.A = torch.eye(in_dim)
+        self.G = torch.eye(out_dim)
+        self.decay = 0.95
+        self.initialized = False
+
+    def update(self, a, g):
+        A_new = (a.T @ a) / a.shape[0]
+        G_new = (g.T @ g) / g.shape[0]
+        if not self.initialized:
+            self.A = A_new.detach().clone()
+            self.G = G_new.detach().clone()
+            self.initialized = True
+        else:
+            self.A = self.decay * self.A + (1-self.decay) * A_new.detach()
+            self.G = self.decay * self.G + (1-self.decay) * G_new.detach()
+
+    def natural_gradient(self, grad_w):
+        A_damp = self.A + self.damping * torch.eye(self.A.shape[0])
+        G_damp = self.G + self.damping * torch.eye(self.G.shape[0])
+        return torch.linalg.inv(G_damp) @ grad_w @ torch.linalg.inv(A_damp)
+
+class LanzariniGeodesicOptimizerV4(nn.Module):
+    def __init__(self, model, lr=0.001, damping=5e-3):
+        super().__init__()
+        self.model = model
+        self.lr = lr
+        self.fisher_blocks = {}
+        self._activations = {}
+        self._gradients = {}
+
+        for name, module in model.named_modules():
+            if isinstance(module, nn.Linear):
+                self.fisher_blocks[name] = FisherBlock(
+                    module.in_features, module.out_features, damping
+                )
+                def make_hooks(n):
+                    def fh(m, i, o): self._activations[n] = i[0].detach()
+                    def bh(m, gi, go):
+                        if go[0] is not None: self._gradients[n] = go[0].detach()
+                    return fh, bh
+                fh, bh = make_hooks(name)
+                module.register_forward_hook(fh)
+                module.register_full_backward_hook(bh)
+
+    def step(self, loss):
+        self.model.zero_grad()
+        loss.backward()
+        with torch.no_grad():
+            for name, module in self.model.named_modules():
+                if name not in self.fisher_blocks: continue
+                fb = self.fisher_blocks[name]
+                if name in self._activations and name in self._gradients:
+                    fb.update(self._activations[name], self._gradients[name])
+                nat_grad = fb.natural_gradient(module.weight.grad.data)
+                module.weight.data -= self.lr * nat_grad
+        self.model.zero_grad()
+
+# Benchmark against Adam (5 seeds) follows in the original V4 execution...
+
+
 ​4. THE LP-1 CHIP AND THE FUTURE OF GREEN AI
 The Lanzarini Model is the logical foundation for the LP-1 (Silicon-Bismuth Hybrid) chip. This architecture allows for operation in "Logical Silence," where the 2.99 Hz resonance acts as a harmonic clock for optimization, transforming data centers into low-impact infrastructures certified by the CAE metric.
 

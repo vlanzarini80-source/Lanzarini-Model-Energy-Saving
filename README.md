@@ -595,8 +595,7 @@ The Lanzarini Model V2 (GEO-Complex) introduces a resonance-based update functio
 ### 1.1 Angular Velocity Definition ($\omega$)
 The system operates at a fundamental resonance frequency of **2.99 Hz**, designated as the *Resonance Clock (EC-2.99)*. The angular velocity is derived as follows:
 
-$$\omega = 2 \cdot \pi \cdot f$$
-\omega = 2 \cdot 3.14159 \cdot 2.99 \approx 18.7867 \text{ rad/s}
+$$\omega = 2 \cdot \pi \cdot f \implies \omega = 2 \cdot 3.14159 \cdot 2.99 \approx 18.7867 \text{ rad/s}$$
 
 ### 1.2 Harmonic Resonance Window ($W$)
 To minimize residual entropy and prevent thermal dissipation in the **LP-1 (Silicon-Bismuth)** chip architecture, the learning intensity is modulated by an oscillatory window:

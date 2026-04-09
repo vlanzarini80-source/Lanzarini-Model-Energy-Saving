@@ -661,6 +661,12 @@ class LanzariniOptimizerV2:
             
         self.time += 1.0 / self.freq
         return sample_window
+
+```
+
+> **Technical Note on Entropic Equilibrium:**
+> The periodic zero-points in the function $W(t)$ are intentional design features. Unlike the classical "Vanishing Gradient" caused by architectural saturation, these intervals represent **Entropic Discharge Phases**. In Bismuth-based hardware (LP-1), these micro-rests allow for thermal stabilization and spin-coherence recovery, ensuring that the gradient modulation is a rhythmic "pulse" rather than a permanent signal loss.
+
         
 ```
 

@@ -663,22 +663,18 @@ class LanzariniOptimizerV2:
         return sample_window
 
 ```
-
-> **Technical Note on Entropic Equilibrium:**
-> The periodic zero-points in the function $W(t)$ are intentional design features. Unlike the classical "Vanishing Gradient" caused by architectural saturation, these intervals represent **Entropic Discharge Phases**. In Bismuth-based hardware (LP-1), these micro-rests allow for thermal stabilization and spin-coherence recovery, ensuring that the gradient modulation is a rhythmic "pulse" rather than a permanent signal loss.
-
-        
-```
-
-## Intellectual Property & Licensing
-All technical logic and coefficients are protected under the **Open for Planet License (OFP-L)**. 
-- Commercial use is strictly linked to Carbon Capture and Storage (CCS) funding.
-- This public record establishes "Prior Art" to prevent unauthorized patenting by third parties.
-
-- © 2026 Valentino Lanzarini. All rights reserved under the Open for Planet (OFP-L) License.
-
-
-**For technical partnership or full RTL source code access, contact Valentino Lanzarini.**
-vlanzarini80@gmail.com
 ---
+
+> **Technical Note on Entropic Equilibrium:** > The periodic zero-points in the function $W(t)$ are intentional design features. Unlike the classical "Vanishing Gradient" caused by architectural saturation, these intervals represent **Entropic Discharge Phases**. In Bismuth-based hardware (LP-1), these micro-rests allow for thermal stabilization and spin-coherence recovery, ensuring that the gradient modulation is a rhythmic "pulse" rather than a permanent signal loss.
+
+---
+
+## Intellectual Property & License
+All technical logic and coefficients (EC-2.99) are the exclusive property of Valentino Lanzarini.
+- Commercial use is strictly prohibited without explicit consent.
+- This public record establishes prior art as of March 15, 2026.
+
+**© 2026 Valentino Lanzarini.**
+
+**For technical partnership contact:** vlanzarini80@gmail.com
 

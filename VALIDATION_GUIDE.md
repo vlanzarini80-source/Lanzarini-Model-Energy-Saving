@@ -11,7 +11,7 @@ This methodology transitions from stochastic iterative computation to a synchron
 
 # Lanzarini Model: Scientific Validation Protocol
 
-This folder contains the official scripts to verify the **Geodetic Efficiency** of the Lanzarini Model compared to standard dissipative AI training methods.
+This folder contains the official scripts To verify the Geodesic-inspired Optimization Efficiency of the Lanzarini Model compared to standard dissipative AI training methods.
 
 ## Objective
 To demonstrate that the **Lanzarini Geodetic Gradient** ($\alpha \nabla S_{ent}$) achieves a lower error state (Loss) with fewer computational iterations, leading to a theoretical energy saving of up to **58%** in large-scale neural networks.

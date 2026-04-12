@@ -75,25 +75,8 @@ To ensure full scientific transparency, the Lanzarini Model distinguishes betwee
 ## 🚀 Vision
 The Lanzarini Model transforms AI computation from a dissipative process to an optimized geodetic movement. By integrating the **W-State** and **2.99 Hz Modulation**, the **LP-1 Chip** slashes energy consumption by **58% in INT8 mode**.
 
-## 🧪 Validation Methodology & Physics Constraints
-
-To ensure full scientific transparency, the Lanzarini Model distinguishes between empirical measurements and architectural projections.
-
-### 1. Software THEORETICAL Validation (Current State)
-- **Environment:** NVIDIA T4 / L4 GPUs (Silicon-based).
-- **Observed Result:** A consistent improvement of **+0.03 in F1-macro score** (LP-3 Algorithm).
-- **Energy Metric:** 0% reduction on standard Silicon. 
-- **Reason:** Standard Silicon hardware operates at THz frequencies, making it physically "blind" to the 2.99 Hz resonance. It lacks the thermal relaxation properties required for the CAE effect.
-
-### 2. Hardware Projection (LP-1 Target)
-- **Architecture:** Silicon-Bismuth Hybrid.
-- **Projected Result:** **34% (FP16)** to **58% (INT8)** energy saving.
-- **Scientific Basis:** These figures are derived from the lower effective mass of carriers ($m^* \approx 0.001 m_e$) and reduced thermal conductivity ($\kappa \approx 7.87$ W/mK) of Bismuth, which allows for phase-locking at 2.99 Hz.
-
-> **Note:** The 58% efficiency is a target for the LP-1 Chip prototype and should be considered a "Research Projection" until the physical Bismuth-integrated hardware is manufactured.
-> 
-
 ---
+
 ### 🔬 Scientific Validation THEORETICAL Laboratory
 The Lanzarini Model is now verifiable. Access the official theoretical validation suite for universities and researchers:
 

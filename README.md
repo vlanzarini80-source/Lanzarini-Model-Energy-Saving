@@ -2,6 +2,13 @@
 *Lanzarini Window Function*
 
 *The frequency parameter (2.99) is not a physical clock frequency, but a modulation parameter in the optimization process*
+
+*Geodetic → Geometric-inspired*
+*W-State → Lanzarini Window*
+*Entropy → “model-defined entropy*
+*COP → Efficiency Ratio*
+*2.99 Hz → modulation parameter*
+
 ## FINAL THEORETICAL VALIDATION PHASE: MARCH 25, 2026
 
 👉 **[Read the Full Lanzarini Model V4 White Paper](./Lanzarini_Model_V4_White_Paper.md)**

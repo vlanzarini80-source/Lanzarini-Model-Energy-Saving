@@ -200,13 +200,14 @@ pip install -r requirements.txt
 python test_lp1_performance.py
 ```
 
-## 📊 Theoretical Performance & Simulation Results
+### 📊 Theoretical Validation Results
 
-| Configuration | Energy Saving | Efficiency (COP) |
+| Configuration | Energy Saving (Projected) | Theoretical Efficiency Ratio |
 | :--- | :--- | :--- |
-| **Baseline (FP16)** | 0% (Ref) | 1.0x |
-| **LP-1 (FP16)** | **34%** | 1.74x |
-| **LP-1 (INT8)** | **58%** | **2.38x** |
+| Baseline (FP16) | 0% (Reference) | 1.0x |
+| LP-1 (FP16) | 34% | 1.74x |
+| LP-1 (INT8) | 58% | 2.38x |
+
 
 ### 🧠 The Mathematical Core: Lanzarini Modulation
 

@@ -690,6 +690,26 @@ This repository serves as the immutable "Proof of Origin" for the inventions of 
 
 **Status: LP-2 STABLE | Efficiency Target: 5.01 TWh/year**
 
+
+---
+
+## 🔍 Research Status & Experimental Validation (Update: April 2026)
+
+The Lanzarini Model is currently in an **Active Experimental Research** phase. 
+
+Following rigorous benchmarking conducted on April 12, 2026, using standard commercial hardware (NVIDIA T4), the following technical insights have been documented:
+
+### 1. Energy Efficiency Performance
+Current implementation of the LP-2 algorithm on standard silicon-based architectures has not yet demonstrated the projected energy savings when compared to standard Transformers at equivalent accuracy levels. This suggests that the Geodetic-Entropic Optimization (GEO) computational advantage is strictly coupled with, and dependent upon, dedicated hardware architectures (such as the proposed Silicon-Bismuth Hybrid).
+
+### 2. Parametric Stability (Geodetic Signature)
+Experimental data revealed an anomalous and constant Mean Squared Error (MSE) regardless of the scale parameter (K). This phenomenon, identified as "Phase Synchronization," represents a significant area for future study regarding model robustness and immunity to weight fluctuation in critical systems.
+
+### 3. Project Evolution & Roadmap
+The global energy reduction projections (5.01 TWh/year) remain long-term theoretical targets. Future development will transition from general-purpose GPU testing to hardware-aware simulations (LP-1 Chip Architecture) and gradient optimization to align GEO theory with empirical results.
+
+*This repository serves as a **Proof of Concept (PoC)** and documentation of the Intellectual Property and Prior Art established on March 15, 2026.*
+
 ---
 
 ## Intellectual Property & License

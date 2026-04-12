@@ -208,6 +208,16 @@ python test_lp1_performance.py
 | LP-1 (FP16) | 34% | 1.74x |
 | LP-1 (INT8) | 58% | 2.38x |
 
+## ⚖️ Scientific Disclaimer & Lanzarini Philosophy
+
+To ensure full transparency with the scientific community, the Lanzarini Model operates under these specific technical definitions:
+
+1. **Lanzarini Entropy ($S$):** In this framework, entropy refers to "optimization noise" and stochastic misalignment during gradient descent. Our hypothesis is that aligning these states leads to computational efficiency. *Note: This differs from the standard thermodynamic Landauer-limit.*
+
+2. **The 2.99 Hz Clock:** The 2.99 Hz frequency is used as a **Theoretical Synchronization Frequency** for model dynamics. It acts as a mathematical stabilizer to prevent divergence during weight updates, rather than a physical CPU clock speed.
+
+3. **Geodesic-inspired Path:** The optimization trajectory follows principles inspired by geodesic geometry to find the path of least computational resistance on the loss manifold.
+
 
 ### 🧠 The Mathematical Core: Lanzarini Modulation
 

@@ -8,7 +8,7 @@ The **LP-1 Processor** represents the first hardware implementation of the **Lan
 This project transitions AI from "Silicon Noise" to "Logical Silence," harmonizing computational power with the Earth's natural resonance.
 
 ## 🛠️ Technical Specifications
-- **Core Engine:** W-State Geodesic Engine (W-SGE).
+- **Core Engine:** Lanzarini Modulation Function (LMF): A stability window defined as W(t) = 0.5[1+\cos(\omega t)], designed to synchronize weight updates with the thermal resonance frequency.
 - **Data Management:** Fibonacci Golden Cache (FGC).
 - **Resonance Clock:** 2.99 Hz (EC-2.99 Protocol).
 - **Energy Efficiency:** Target reduction of **5.01 TWh/year**.

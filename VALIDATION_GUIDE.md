@@ -14,7 +14,7 @@ This methodology transitions from stochastic iterative computation to a synchron
 This folder contains the official scripts To verify the Geodesic-inspired Optimization Efficiency of the Lanzarini Model compared to standard dissipative AI training methods.
 
 ## Objective
-To demonstrate that the Lanzarini Geodesic Gradient (\alpha \nabla S_{ent}) achieves a lower error state (Loss) with fewer computational iterations, leading to a theoretical energy saving of up to **58%** in large-scale neural networks.
+To demonstrate that the Lanzarini Geodesic Gradient $$ (\alpha \nabla S_{ent}) $$ achieves a lower error state (Loss) with fewer computational iterations, leading to a theoretical energy saving of up to **58%** in large-scale neural networks.
 
 ## How to run the test
 1. Install dependencies:
@@ -24,7 +24,8 @@ To demonstrate that the Lanzarini Geodesic Gradient (\alpha \nabla S_{ent}) achi
 
 ## Interpreting Results
 - **Red Line (Standard):** Represents the current "Brute Force" statistical approach.
-- **Green Line (Lanzarini):** Represents the Geodetic Optimization. 
+- **Green Line** (Lanzarini): Represents the Geodesic-inspired Optimization.
+- 
 - **The Gap:** The vertical distance between the lines (on a log scale) represents the reduction in computational entropy. 
 
 ## Paternity & Ethics

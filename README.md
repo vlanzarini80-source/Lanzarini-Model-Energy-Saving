@@ -1,5 +1,5 @@
 # LANZARINI MODEL - GENESIS & NEURAL-CORE (V11.0)
-## FINAL VALIDATION PHASE: MARCH 25, 2026
+## FINAL THEORETICAL VALIDATION PHASE: MARCH 25, 2026
 
 👉 **[Read the Full Lanzarini Model V4 White Paper](./Lanzarini_Model_V4_White_Paper.md)**
 
@@ -26,7 +26,7 @@ The model is protected under the Open for Planet (OFP-L) License.
 4. [lanzarini_v11_neural_core.py](./lanzarini_v11_neural_core.py) - Bio-digital integration (Final Sync)
 
 
-6. ### 📸 FINAL VALIDATION PROOF (V11.0)
+6. ### 📸 FINAL THEORETICAL VALIDATION PROOF (V11.0)
 
 This is the indisputable evidence of the **Lanzarini Model**'s success. The following screenshot documents the final synchronization and the official achievement of the planetary energy saving target.
 
@@ -46,7 +46,7 @@ The Lanzarini Model transforms AI computation from a dissipative process to an o
 
 ---
 ### 🔬 Scientific Validation Laboratory
-The Lanzarini Model is now verifiable. Access the official validation suite for universities and researchers:
+The Lanzarini Model is now verifiable. Access the official theoretical validation suite for universities and researchers:
 
 * 📑 [Scientific Validation Protocol](VALIDATION_GUIDE.md)
 * 🐍 [Convergence Test Script (Python)](lanzarini_convergence_test.py)
@@ -58,7 +58,7 @@ The Lanzarini Model is now verifiable. Access the official validation suite for 
 
 
 
-## 📊 Benchmark & Validation (v1.2 - March 24, 2026)
+## 📊 Benchmark &  THEORETICAL Validation (v1.2 - March 24, 2026)
 
 The Lanzarini Model has been stress-tested in a comparative environment (FP16 vs. INT8) to validate the "Quantum Chassis" of the W-State.
 
@@ -68,7 +68,7 @@ The Lanzarini Model has been stress-tested in a comparative environment (FP16 vs
 * **Entropic Stability:** The Geodetic-Entropic gradient $\alpha \nabla S_{ent}$ successfully guided the model toward a lower entropy state even under 8-bit quantization, preventing the typical accuracy loss in compressed models.
 * **Memory Access Efficiency:** Simulated FGC (Fibonacci Golden Cache) layer demonstrated a reduction in data-fetching overhead through entropic sorting.
 
-* ### 📈 Experimental Validation
+* ### 📈 Experimental Validation TEOR.
 ![Lanzarini Entropy Benchmark](lanzarini_entropy_benchmark_v1.2.png)
 ### 📊 Entropy-Energy Correlation Analysis
 *Fig 1. Energy consumption reduction through Geodetic-Entropic Optimization (GEO).*
@@ -93,7 +93,7 @@ Every line of code in this repository is protected under the **Open for Planet (
 **Core Objective:** Global computational entropy reduction for a target saving of **5.01 TWh/year**.
 
 
-> **Validation Status:** Alpha 1.2 Stable. Tested on PyTorch 2.x / CUDA T4.
+> **Validation Theoretical Status:** Alpha 1.2 Stable. Tested on PyTorch 2.x / CUDA T4.
 
 ---
 
@@ -201,11 +201,11 @@ Validation Methodology (How we achieved 58%)
 **Author:** Valentino Lanzarini  
 **License:** Open for Planet
 
-## 🚀 Experimental Validation (Hardware: NVIDIA T4 Tensor Core)
+## 🚀 Experimental Theoretical Validation (Hardware: NVIDIA T4 Tensor Core)
 
 The Lanzarini Model has been subjected to rigorous stress tests to validate the stability and efficiency of the **LP-1 Chip** architecture. Unlike standard optimizers (e.g., Adam), this model utilizes **W-State Entanglement** and **Geodetic-Entropic Optimization** to prevent gradient explosion and minimize energy consumption.
 
-### 1. Deep Geodesic Convergence (1000 Epochs)
+### 1. Deep Geodesic Convergence Theoretical (1000 Epochs)
 ![Convergence Test](val_convergence_T4_1000.png)
 
 * **Metric:** Entropy / Loss reduction over 1000 cycles.
@@ -246,7 +246,7 @@ Following the successful hardware stress tests on NVIDIA T4, the project is movi
 
 ---
 
-## 🌍 Impact & Energy Efficiency
+## 🌍 Impact & Energy Efficiency Theoretical
 * **Power Saving:** Estimated **34% net energy reduction** in data center weight optimization.
 * **Stability:** 100% Reliability (Zero $NaN$ errors recorded during stress tests).
 * **Application:** Green Certification for high-performance computing (HPC) and sustainable AI.
@@ -293,7 +293,7 @@ attn_probs, lanz_loss, entropy, _ = optimizer(query, key)
 ```
 This repository is protected by the OFP-L Climate Audit Shield. Any industrial training performed without official CCS contribution reporting is a direct violation of the Lanzarini Model Intellectual Property (Ref: LANZARINI-XAI-20260330-001).
 
-# Lanzarini Model LP-1: Hardware Validation & Proof of Concept
+# Lanzarini Model LP-1: Hardware Validation & Proof of Concept Theoretical
 
 ## Project Overview
 **Principal Author:** Valentino Lanzarini  
@@ -309,7 +309,7 @@ The hardware logic has been rigorously tested and validated using **EDA Playgrou
 2. **EC-2.99 Resonance Protocol:** Stable integration of the 2.99 Hz synchronization clock within the digital logic gates.
 3. **Hardware-Level Efficiency:** The simulation confirms that the entropic reduction logic is ready for RTL synthesis and physical chip manufacturing.
 
-### Hardware Simulation Waveforms (EPWave)
+### Hardware Theoretical Simulation Waveforms (EPWave)
 ![Hardware Validation](validation_waveform.jpg)
 *The image above shows the actual EPWave digital signals from the LP-1 core simulation, providing undeniable proof of the model's functionality.*
 
@@ -317,7 +317,7 @@ The hardware logic has been rigorously tested and validated using **EDA Playgrou
 ![Simulation Log](simulation_log.jpg)
 *Technical log confirming successful Icarus Verilog compilation and execution on March 31, 2026.*
 
-## 💎 Final Hardware Validation (Update: March 31, 2026)
+## 💎 Final Hardware Theoretical Validation (Update: March 31, 2026)
 
 To complement the timing and signal analysis shown above, a high-stress simulation was conducted to measure the absolute peak efficiency of the **LP-1 CAE Engine**.
 
@@ -345,25 +345,25 @@ This 100% peak efficiency at the logic gate level is the foundation for the proj
 ## 🎯 Project Objective
 The **LP-1** architecture is a Geodetic-Entropic optimization module designed for AI hardware accelerators. Its primary goal is to drastically reduce thermal dissipation and dynamic power consumption ($P_{dyn}$) during critical backpropagation phases.
 
-## 🚀 Innovation: Data-Driven Entropy Gating
+## 🚀 Innovation Theoretical : Data-Driven Entropy Gating
 Moving beyond traditional time-based power-gating, version **v0.4** introduces autonomous decision-making logic:
 - **Hamming Distance Analysis:** The hardware calculates real-time bit-toggle rates between consecutive clock cycles.
 - **Adaptive Data-Hold:** If the signal entropy exceeds the safety threshold (`THRESHOLD`), the system triggers a "Hold" state, blocking unnecessary switching while preserving data integrity.
 - **Impact:** Significant reduction in computational noise and estimated energy savings between 40% and 60% in stochastic AI datasets.
 
-## 📂 Technical Source Files
+## 📂 Technical Source Files Theoretical
 You can review the RTL source and validation logic at the following links:
 - [💾 Core Engine RTL (lp1_cae_engine_real.v)](./lp1_cae_engine_real.v): The main Verilog module.
 - [🧪 Validation Testbench (tb_lp1_cae_engine_real.v)](./tb_lp1_cae_engine_real.v): The simulation environment for AI gradient datasets.
 
-## 📊 Experimental Validation
+## 📊 Experimental Theoretical Validation
 The system has been successfully verified using the **Icarus Verilog** engine. The following simulation log documents the chip's behavior: the `gate_active` signal triggers precisely when entropy spikes are detected, confirming the "intelligent" nature of the gating mechanism.
 
 ### Simulation Log (Proof of Work)
 ![LP-1 Entropy Validation](./LP1_v0.4_Entropy_Gating_Validation_Log.jpg)
 *Figure 1: Simulator output confirming deterministic gating activation in response to data dynamics (Hamming Distance > 5).*
 
-# 🛰️ Lanzarini Model: LP-1 Orbital Engine (Gold Master v2.0)
+# 🛰️ Lanzarini Model: LP-1 Orbital Engine (Gold Master v2.0) Theoretical
 **Principal Author & Sole Proprietor:** Valentino Lanzarini  
 **Discovery Date:** March 15, 2026 | **Restoration Point:** April 2, 2026  
 **License:** Open for Planet (OFP-L) v1.0
@@ -426,7 +426,7 @@ module lp1_orbital_engine (
     end
 endmodule
 ```
-Testbench & Validation Protocol
+Testbench & Theoretical Validation Protocol
 Validation was conducted using the tb_lp1_visual module, simulating a 100MHz operational environment. The system confirmed resonance stability and optimized data integrity over a 1,000,000 ns cycle.
 
 5. Intellectual Property & Impact
@@ -437,7 +437,7 @@ Note: Any attempt at "Strategic Denial" by third parties is countered by this im
 Document generated for official release on April 2, 2026.
 
 
-# Lanzarini Model LP-2: Geodetic-Entropic Optimization (GEO)
+# Lanzarini Model LP-2: Geodetic-Entropic Optimization (GEO) Theoretical
 
 ## 🛡️ Executive Summary & Intellectual Property
 - **Principal Author:** Valentino Lanzarini
@@ -448,7 +448,7 @@ Document generated for official release on April 2, 2026.
 
 ---
 
-## 💡 The Logic of the Simulation: Why Bitcoin?
+## 💡 The Logic of the Theoretical Simulation: Why Bitcoin?
 
 This simulation addresses a critical systemic risk in digital finance. Bitcoin serves as the **"Sentinel Asset"** for this validation due to its structural transparency.
 
@@ -465,14 +465,14 @@ By applying a high-pressure `ATTACK_RATE` (0.015), we simulated a "Quantum Armag
 
 ---
 
-## 📊 Final Validation Report (Google Colab Stress-Test)
+## 📊 Final Theoretical Validation Report (Google Colab Stress-Test)
 
 ### 📈 Comparative Results
 Below is the official validation result generated on April 04, 2026.
 
 ![LP-2 Validation Results](LP2_validation_results_04_04_2026_CAE5842_benchmark30k.png)
 
-### 🔬 Technical Parameters (Black-Box Validation)
+### 🔬 Technical Parameters (Black-Box Validation) Theoretical
 The simulation utilizes the proprietary **Lanzarini GEO Logic** to filter computational noise without exposing the underlying equations.
 - **CAE (Entropy Abatement Coefficient):** 58.42%
 - **Target Global Energy Saving:** 5.01 TWh/year
@@ -491,10 +491,10 @@ This repository serves as an immutable timestamp and **Proof of Origin**. Any co
 *Valentino Lanzarini - April 04, 2026*
 
 
-## ⚙️ Computational Proof of Concept: Entropy Abatement
+## ⚙️ Computational Proof of Concept:  Theoretical Entropy Abatement
 The Lanzarini Model has been tested through a **Bio-Synthetic Multi-Agent Simulation** (Xenobot Kinematics). This environment provides an algorithmic validation of the model’s ability to transition complex systems from stochastic noise to geodetic coherence.
 
-### 📊 Algorithmic Benchmarking
+### 📊 Algorithmic Theoretical Benchmarking
 ![Lanzarini vs Random Cost Comparison](VALIDAZIONE_ESTERNA_GPT_2026.png)
 
 * **Baseline (Random/Stochastic):** Standard AI models and biological simulations exhibit high energy "cost" (~70 units) and volatile dissipation due to persistent entropic noise.
@@ -512,7 +512,7 @@ This process eliminates the thermal friction and "information heat" typical of s
 > 
 ---
 
-# Lanzarini Model - Official Repository
+# Lanzarini Model - Theoretical Official Repository
 Author: Valentino Lanzarini | Discovery: March 15, 2026
 
 ![Resilience Proof](resilience_proof_2.0.png)
@@ -582,7 +582,7 @@ if __name__ == "__main__":
     # ... Training and Test Execution ...
 
 ```    
-# Lanzarini Model V2: Geodetic-Entropic Optimization (GEO)
+# Lanzarini Model V2: Theoretical  Geodetic-Entropic Optimization (GEO)
 **Author:** Valentino Lanzarini  
 **Discovery Date:** March 15, 2026  
 **License:** Open for Planet (OFP-L) v1.0  
@@ -672,6 +672,7 @@ class LanzariniOptimizerV2:
 ---
 
 ## 🚀 TECHNICAL MILESTONE: April 11, 2026
+Theoretical
 ### Stabilization of the Lanzarini Model v2.0 (LP-2)
 
 This update officially marks the transition to the **LP-2 Logic**, successfully resolving the computational instabilities identified in the initial phase. The **Geodetic-Entropic Optimization (GEO)** is now locked and verified.
@@ -681,7 +682,7 @@ Click the links below to verify the core components of the LP-2 protocol:
 * **[Technical Validation Report](./VALIDATION_LOG_APRIL_11.md)**: Proof of the -5.17 dB SNR recovery and K-constant verification.
 * **[LP-2 Kernel Core (v2.0)](./lp1_kernel_core.py)**: The official source code implementing the "Logical Silence" filter.
 
-#### Key Results of the LP-2 Update:
+#### Key Theoretical Results of the LP-2 Update:
 - **Universal Constant (K):** Fixed at **10.0** (The "Lanzarini Point").
 - **Signal Integrity:** **0.998606 Correlation** (Verified Legendary).
 - **Architecture:** Optimized for the **Silicon-Bismuth (LP-1)** hybrid hardware resonance.
@@ -689,12 +690,12 @@ Click the links below to verify the core components of the LP-2 protocol:
 #### Intellectual Property Notice:
 This repository serves as the immutable "Proof of Origin" for the inventions of **Valentino Lanzarini**. The **LP-2 Logic**, the **K=10.0 Constant**, and all derivative calculations are protected under the **Open for Planet (OFP-L) License v1.0**. 
 
-**Status: LP-2 STABLE | Efficiency Target: 5.01 TWh/year**
+**Status: LP-2 STABLE | Theoretical Efficiency Target: 5.01 TWh/year**
 
 
 ---
 
-## 🔍 Research Status & Experimental Validation (Update: April 2026)
+## 🔍 Research Status & Experimental Theoretical Validation (Update: April 2026)
 
 The Lanzarini Model is currently in an **Active Experimental Research** phase. 
 
@@ -711,7 +712,7 @@ The global energy reduction projections (5.01 TWh/year) remain long-term theoret
 
 *This repository serves as a **Proof of Concept (PoC)** and documentation of the Intellectual Property and Prior Art established on March 15, 2026.*
 
-# 🔬 Lanzarini Model: Technical Report & Experimental Validation (April 2026)
+# 🔬 Lanzarini Model: Technical Report & Experimental Theoretical  Validation (April 2026)
 
 ---
 

@@ -26,7 +26,8 @@ To demonstrate that the Lanzarini Geodesic Gradient $$ \alpha \nabla S_{ent} $$ 
 - **Red Line (Standard):** Represents the current "Brute Force" statistical approach.
 - **Green Line** (Lanzarini): Represents the Geodesic-inspired Optimization.
 
-- **The Gap:** The vertical distance between the lines (on a log scale) represents the reduction in computational entropy. 
+- **The Gap:** The vertical distance between the lines (on a log scale) represents the reduction in computational entropy 
+represents the reduction in computational entropy (defined as optimization noise in this framework)
 
-## Paternity & Ethics
+- ## Paternity & Ethics
 This validation is part of the **Lanzarini Project** (Discovery Date: March 15, 2026) and is released under the **Open for Planet (OFP-L)** License to ensure AI remains a sustainable common good.

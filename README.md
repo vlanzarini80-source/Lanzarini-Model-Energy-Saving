@@ -210,12 +210,15 @@ python test_lp1_performance.py
 
 ### 🧠 The Mathematical Core: Lanzarini Modulation
 
-Weight control is governed by the **Lanzarini Geodesic-inspired Equation**:
-$$d\theta/dt = -\nabla L(\theta) - \alpha \nabla S(\theta) + \gamma \sin(2\pi f t)$$
+The model adopts a **Geodesic-inspired Optimization Path**. Instead of standard linear updates, the trajectory follows a curved flow on the loss manifold to minimize computational friction.
 
-* **Lanzarini Entropy Definition:** In this framework, "Computational Entropy" ($S$) refers to the stochastic noise and misalignment during gradient updates. Our goal is to align these into a coherent resonant state.
-* **Thermodynamic Note:** This entropy reduction is an original hypothesis of the Lanzarini Model, focusing on computational alignment rather than standard Landauer-limit thermodynamics.
-* 
+**Lanzarini Modulation Function (LMF):**
+The core synchronization is governed by:
+$$W(t) = 0.5[1+\cos(\omega t)]$$
+where $\omega = 2\pi f$ and $f = 2.99$. 
+
+*Note: This is an adaptive stability window designed to synchronize computational dynamics, specifically developed for the Lanzarini Model.*
+
 
 ## 🛠️ Repository Structure
 * `LP1_Ultimate_Core.py`: The core PyTorch implementation.

@@ -25,7 +25,7 @@ To demonstrate that the Lanzarini Geodesic Gradient $$ \alpha \nabla S_{ent} $$ 
 ## Interpreting Results
 - **Red Line (Standard):** Represents the current "Brute Force" statistical approach.
 - **Green Line** (Lanzarini): Represents the Geodesic-inspired Optimization.
-- 
+
 - **The Gap:** The vertical distance between the lines (on a log scale) represents the reduction in computational entropy. 
 
 ## Paternity & Ethics

@@ -1,5 +1,6 @@
 # LANZARINI MODEL - GENESIS & NEURAL-CORE (V11.0)
 *Lanzarini Window Function*
+
 *The frequency parameter (2.99) is not a physical clock frequency, but a modulation parameter in the optimization process*
 ## FINAL THEORETICAL VALIDATION PHASE: MARCH 25, 2026
 

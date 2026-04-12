@@ -915,6 +915,135 @@ Author: Valentino Lanzarini
 Date: April 2026
 License: Open Research Project
 
+
+---
+
+🔬 Technical Clarifications & Experimental Update (April 2026)
+
+⚠️ Scope and Interpretation
+
+This section provides clarifications to ensure correct scientific interpretation of the Lanzarini Model.
+
+The content above includes conceptual and theoretical elements that should be interpreted within the context of an exploratory optimization framework, not as established physical or hardware-level results.
+
+---
+
+🧠 Terminology Clarifications
+
+Geodetic Movement
+
+The term "Geodetic" is used in an intuitive sense.
+
+«The implemented formulation corresponds to a first-order gradient-based optimization flow, not a true geodesic in the Riemannian geometry sense.»
+
+---
+
+W-State
+
+The term "W-State" does not refer to quantum entanglement.
+
+«The function used in the model is a classical oscillatory window function, here referred to as the Lanzarini Window Function.»
+
+---
+
+Entropy Definition
+
+The concept of entropy used in this project is not thermodynamic entropy.
+
+«In this model, entropy is defined as an abstract optimization-related quantity, and does not correspond to physical entropy as defined in statistical mechanics.»
+
+---
+
+Frequency Parameter (2.99)
+
+The frequency value used in the model:
+
+«f = 2.99»
+
+is a modulation parameter within the optimization process.
+
+«It does not represent a physical hardware frequency and should not be interpreted as a clock or resonance in electronic systems.»
+
+---
+
+Efficiency Metrics
+
+Any reference to efficiency (e.g. "COP") should be interpreted as:
+
+«a theoretical or relative efficiency ratio, not a physical measure such as energy consumption (e.g. Joules, Watts, TOPS/W).»
+
+---
+
+📊 Experimental Findings (Software Validation)
+
+The model has been evaluated through controlled experiments using standard neural network training.
+
+Observed Results
+
+- LP-2 (loss-level oscillation): no measurable effect
+- Random perturbations: equivalent behavior
+- LP-3 (gradient-phase modulation): small improvement (~+0.02 / +0.03 F1-macro)
+
+---
+
+Key Interpretation
+
+«Oscillatory perturbations applied at the loss level do not influence optimization dynamics.»
+
+«Structured perturbations applied directly to the gradient can slightly modify training trajectories and produce small performance improvements.»
+
+---
+
+⚡ Computational and Energy Considerations
+
+No improvements have been observed in:
+
+- training time
+- number of optimization steps
+- computational cost (FLOPs)
+- hardware energy consumption
+
+«Therefore, no energy-saving claims are supported by the current experimental results.»
+
+---
+
+🧪 Hardware Considerations
+
+Any reference to hardware implementations (e.g. alternative materials or architectures) should be considered:
+
+«purely theoretical and not experimentally validated»
+
+No physical prototype, simulation, or hardware benchmark currently supports:
+
+- energy reduction mechanisms
+- material-dependent optimization behavior
+- coupling between physical frequency and training dynamics
+
+---
+
+🧾 Final Clarification
+
+The Lanzarini Model should currently be understood as:
+
+«an exploratory study on oscillatory effects in gradient-based optimization»
+
+It does not constitute:
+
+- a validated physical theory
+- a quantum mechanical model
+- an energy-efficient AI system
+
+---
+
+🚀 Future Work
+
+- frequency sensitivity analysis
+- validation on real datasets (e.g. biomedical signals)
+- statistical robustness (multiple seeds)
+- comparison with standard optimizers
+- deeper analysis of gradient-phase coupling
+
+---
 ---
 
 ## Intellectual Property & License

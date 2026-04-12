@@ -167,7 +167,8 @@ pip install -r requirements.txt
 python test_lp1_performance.py
 ```
 
-## 📊 Validated Performance
+##📊 Theoretical Performance & Simulation Results
+
 | Configuration | Energy Saving | Efficiency (COP) |
 | :--- | :--- | :--- |
 | **Baseline (FP16)** | 0% (Ref) | 1.0x |

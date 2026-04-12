@@ -61,7 +61,7 @@ The Lanzarini Model transforms AI computation from a dissipative process to an o
 
 To ensure full scientific transparency, the Lanzarini Model distinguishes between empirical measurements and architectural projections.
 
-### 1. Software Validation (Current State)
+### 1. Software THEORETICAL Validation (Current State)
 - **Environment:** NVIDIA T4 / L4 GPUs (Silicon-based).
 - **Observed Result:** A consistent improvement of **+0.03 in F1-macro score** (LP-3 Algorithm).
 - **Energy Metric:** 0% reduction on standard Silicon. 

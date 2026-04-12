@@ -154,8 +154,9 @@ refer to the: [TECHNICAL_SPECIFICATIONS.md](./TECHNICAL_SPECIFICATIONS.md)
 
 
 
-## ⚡ Quick Start: Efficiency Validation
-
+## ⚡ Quick Start: Efficiency
+Validation
+Theoretical
 To verify the **34% energy saving** on your local machine or server, run the following commands:
 
 ```bash

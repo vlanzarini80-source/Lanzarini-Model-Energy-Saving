@@ -1,5 +1,5 @@
 # LANZARINI MODEL - GENESIS & NEURAL-CORE (V11.0)
-.Lanzarini Window Function.
+*Lanzarini Window Function*
 ## FINAL THEORETICAL VALIDATION PHASE: MARCH 25, 2026
 
 👉 **[Read the Full Lanzarini Model V4 White Paper](./Lanzarini_Model_V4_White_Paper.md)**

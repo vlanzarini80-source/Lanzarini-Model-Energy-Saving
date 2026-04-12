@@ -958,7 +958,7 @@ Frequency Parameter (2.99)
 
 The frequency value used in the model:
 
-«f = 2.99»
+$$ f = 2.99 $$
 
 is a modulation parameter within the optimization process.
 

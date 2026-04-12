@@ -167,7 +167,7 @@ pip install -r requirements.txt
 python test_lp1_performance.py
 ```
 
-##📊 Theoretical Performance & Simulation Results
+## 📊 Theoretical Performance & Simulation Results
 
 | Configuration | Energy Saving | Efficiency (COP) |
 | :--- | :--- | :--- |

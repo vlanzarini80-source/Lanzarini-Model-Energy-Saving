@@ -206,7 +206,7 @@ Validation Methodology (How we achieved 58%)
 
 The Lanzarini Model has been subjected to rigorous stress tests to validate the stability and efficiency of the **LP-1 Chip** architecture. Unlike standard optimizers (e.g., Adam), this model utilizes **W-State Entanglement** and **Geodetic-Entropic Optimization** to prevent gradient explosion and minimize energy consumption.
 
-### 1. Deep Geodesic Convergence Theoretical (1000 Epochs)
+### 1. Deep  Geometric-inspired optimization flow Convergence Theoretical (1000 Epochs)
 ![Convergence Test](val_convergence_T4_1000.png)
 
 * **Metric:** Entropy / Loss reduction over 1000 cycles.

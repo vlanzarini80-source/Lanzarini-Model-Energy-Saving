@@ -710,6 +710,194 @@ The global energy reduction projections (5.01 TWh/year) remain long-term theoret
 
 *This repository serves as a **Proof of Concept (PoC)** and documentation of the Intellectual Property and Prior Art established on March 15, 2026.*
 
+# 🔬 Lanzarini Model: Technical Report & Experimental Validation (April 2026)
+
+---
+
+## 1. Executive Summary
+
+This document presents the current state of the Lanzarini Model, an experimental framework for studying oscillatory perturbations in neural network optimization.
+
+The project distinguishes between:
+- **Validated Software Behavior** → tested on standard GPU hardware
+- **Exploratory Hardware Hypothesis** → not experimentally validated
+
+The results show that:
+- Loss-level oscillations do not affect training
+- Gradient-level phase modulation introduces a small but measurable effect
+- No computational or energy efficiency improvements have been observed
+
+---
+
+## 2. Mathematical Framework
+
+### 2.1 Standard Optimization
+Neural network training is based on gradient descent:
+
+$$\theta_{t+1} = \theta_t - \eta \nabla L(\theta_t)$$
+
+---
+
+### 2.2 Oscillatory Modulation (General Form)
+A periodic modulation is introduced:
+
+$$W(t) = \cos(\omega t)$$
+
+where:
+- $\omega = 2 \pi f$
+- $f = 2.99$ (fixed experimental parameter)
+
+---
+
+### 2.3 LP-2 (Loss-Level Perturbation)
+
+$$\theta_{t+1} = \theta_t - \eta \nabla \left[ L(\theta_t) + \lambda \cos(\omega t) \right]$$
+
+**Observation:**
+This formulation does not affect optimization dynamics in practice.
+
+---
+
+### 2.4 LP-3 (Gradient-Phase Modulation)
+
+$$\theta_{t+1} = \theta_t - \eta \left[ \nabla L(\theta_t) + \lambda \cdot \cos(\omega t) \cdot \frac{\nabla L(\theta_t)}{\|\nabla L(\theta_t)\| + \epsilon} \right]$$
+
+This introduces a directional perturbation aligned with the gradient.
+
+---
+
+## 3. Experimental Results (Software Validation)
+
+Experiments were conducted on standard GPU hardware using a simple neural network.
+
+### 3.1 Baseline vs LP-2
+- **LP-2 (loss oscillation):** no measurable effect
+- **Random perturbation:** equivalent behavior
+
+**Conclusion:** Loss-level oscillations are effectively ignored by the optimizer.
+
+---
+
+### 3.2 LP-3 (Gradient-Phase Modulation)
+- **Observed improvement:** +0.02 / +0.03 F1-macro
+- **Effect:** small but consistent across controlled runs
+
+**Interpretation:**
+> "Structured oscillatory perturbations applied directly to the gradient can slightly modify optimization trajectories and improve generalization in simple settings."
+
+---
+
+## Important Note on Frequency
+The value $f = 2.99$ was used as a fixed parameter.
+- No frequency sweep has been performed
+- No resonance behavior has been demonstrated
+- This value should be considered experimental, not physically validated.
+
+---
+
+## 4. Computational Efficiency
+No improvements were observed in:
+- training time
+- number of iterations
+- computational cost (FLOPs)
+- hardware energy consumption
+
+> "Therefore, no energy saving claims are supported by current experiments."
+
+---
+
+## 5. Hardware Hypothesis (Exploratory)
+The idea of energy efficiency through alternative materials (e.g., Bismuth-based architectures) remains purely theoretical. No experimental validation exists for:
+- energy reduction mechanisms
+- material-induced optimization effects
+- coupling between physical frequency and training dynamics
+
+This section should be considered a **research hypothesis**, not a demonstrated result.
+
+---
+
+## 6. Reproducible Code
+
+```python
+import torch
+import torch.nn as nn
+import torch.optim as optim
+import numpy as np
+from torch.utils.data import DataLoader, TensorDataset
+from sklearn.metrics import f1_score
+
+class SimpleNet(nn.Module):
+    def __init__(self, input_dim):
+        super().__init__()
+        self.net = nn.Sequential(
+            nn.Linear(input_dim, 64),
+            nn.ReLU(),
+            nn.Linear(64, 2)
+        )
+
+    def forward(self, x):
+        return self.net(x)
+
+def evaluate(model, loader):
+    model.eval()
+    y_true, y_pred = [], []
+    with torch.no_grad():
+        for x, y in loader:
+            out = model(x)
+            pred = torch.argmax(out, dim=1)
+            y_true.extend(y.numpy())
+            y_pred.extend(pred.numpy())
+    return f1_score(y_true, y_pred, average="macro")
+
+def train_lp3(model, loader, epochs=5, lr=1e-3, lam=0.1, freq=2.99):
+    opt = optim.Adam(model.parameters(), lr=lr)
+    loss_fn = nn.CrossEntropyLoss()
+
+    for epoch in range(epochs):
+        for i, (x, y) in enumerate(loader):
+            opt.zero_grad()
+            out = model(x)
+            loss = loss_fn(out, y)
+            loss.backward()
+
+            grads = []
+            norm = 0.0
+            for p in model.parameters():
+                if p.grad is not None:
+                    g = p.grad.detach()
+                    grads.append(g)
+                    norm += g.norm()
+
+            t = epoch * len(loader) + i
+            phase = torch.cos(torch.tensor(2 * np.pi * freq * t))
+
+            with torch.no_grad():
+                for p, g in zip(model.parameters(), grads):
+                    p.grad += lam * phase * (g / (norm + 1e-8))
+
+            opt.step()
+```
+
+---
+
+7. Final Conclusion
+LP-2 (loss oscillation) has no effect on optimization.
+LP-3 (gradient modulation) produces a small measurable improvement.
+No energy or computational efficiency gains have been observed on standard hardware.
+"The Lanzarini Model currently represents an exploratory study in optimization dynamics, not an energy-efficient AI system."
+
+---
+
+8. Future Work
+Frequency sweep analysis
+Testing on real datasets (e.g., biomedical signals)
+Statistical validation (multiple seeds)
+Comparison with other optimizers (SGD, RMSProp, AdamW)
+Deeper study of gradient-phase coupling mechanisms
+Author: Valentino Lanzarini
+Date: April 2026
+License: Open Research Project
+
 ---
 
 ## Intellectual Property & License

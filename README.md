@@ -1133,8 +1133,8 @@ This method is related to standard optimization frameworks like Stochastic Gradi
 
 ## 5. Spectral & Local Analysis
 
-Near a stationary point $\theta^*$, we assume the local approximation:
-$$\nabla S_{ent}(\theta) \approx H(\theta - \theta^*)$$
+Near a stationary point $ \theta^* $, we assume the local approximation:
+$$ \nabla S_{ent}(\theta) \approx H(\theta - \theta^*) $$
 where $H$ is the Hessian matrix. The linearized dynamics become:
 $$\frac{d\theta}{dt} \approx -H(\theta - \theta^*)$$
 

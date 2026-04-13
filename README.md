@@ -1141,7 +1141,8 @@ $$\frac{d\theta}{dt} \approx -H(\theta - \theta^*)$$
 This leads to exponential decay along the eigen-directions:
 $$\alpha_i(t) = \alpha_i(0)\exp(-\lambda_i t)$$
 
-Where $\lambda_i$ are the eigenvalues of $H$. 
+Where $\lambda_i$ are the eigenvalues of $H$.
+
 
 ### ⏱️ Interpretation of Rates
 * **$\lambda_i$** defines the convergence rate along the direction $v_i$.

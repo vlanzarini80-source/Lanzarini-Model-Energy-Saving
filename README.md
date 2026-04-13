@@ -1082,6 +1082,111 @@ It does not constitute:
 
 ---
 
+# Lanzarini Optimization Model (LOM)
+
+## 1. Overview
+The **Lanzarini Optimization Model** is a nonlinear extension of gradient-based optimization methods designed to improve stability and robustness in ill-conditioned optimization landscapes. 
+
+The model introduces a bounded gradient transformation using a nonlinear saturation function ($\tanh$), resulting in a stable and controlled update dynamic that prevents gradient explosion.
+
+---
+
+## 2. Mathematical Definition
+
+The core update rule is defined by the following discrete-time dynamic:
+
+$$
+\theta_{k+1} = \theta_k - \eta \, \tanh\big(\nabla S_{ent}(\theta_k)\big)
+$$
+
+Where:
+* **$\theta_k \in \mathbb{R}^n$**: Parameter vector at iteration $k$.
+* **$\eta$**: Learning rate (step size).
+* **$S_{ent}(\theta)$**: Differentiable scalar objective function (Entropy-based or generic loss function).
+* **$\tanh(\cdot)$**: Nonlinear saturation function applied element-wise to the gradient.
+
+---
+
+## 3. Formal Interpretation
+The model is formally classified as:
+1.  **Nonlinear Gradient Descent Variant:** A modification of standard GD using bounded updates.
+2.  **Bounded Gradient Flow System:** A system where the "velocity" of updates is constrained.
+3.  **Dissipative Optimization Dynamical System:** A system that suppresses high-gradient oscillations to find stable minima.
+
+> **Note:** This model is a mathematical framework for numerical optimization and does not represent a physical hardware system.
+
+---
+
+## 4. Connection to Classical Optimization
+
+### 4.1 Relationship with SGD
+This method is related to standard optimization frameworks like Stochastic Gradient Descent (SGD) and Gradient Clipping:
+
+* **For small gradients ($|x| \ll 1$):**
+    $$\tanh(x) \approx x$$
+    The behavior approximates standard SGD.
+* **For large gradients ($|x| \gg 1$):**
+    $$\tanh(x) \rightarrow \pm 1$$
+    This introduces an **implicit, differentiable gradient clipping effect**, automatically stabilizing the updates.
+
+---
+
+## 5. Spectral & Local Analysis
+
+Near a stationary point $\theta^*$, we assume the local approximation:
+$$\nabla S_{ent}(\theta) \approx H(\theta - \theta^*)$$
+where $H$ is the Hessian matrix. The linearized dynamics become:
+$$\frac{d\theta}{dt} \approx -H(\theta - \theta^*)$$
+
+This leads to exponential decay along the eigen-directions:
+$$\alpha_i(t) = \alpha_i(0)\exp(-\lambda_i t)$$
+
+Where $\lambda_i$ are the eigenvalues of $H$. 
+
+### ⏱️ Interpretation of Rates
+* **$\lambda_i$** defines the convergence rate along the direction $v_i$.
+* The system is **locally dissipative**.
+* **Normalization:** We use $f_i = \frac{\lambda_i}{2\pi}$ as a formal mathematical mapping to interpret convergence timescales. This is a rate interpretation, not a physical frequency.
+
+---
+
+## 6. Technical Properties
+
+### 6.1 Stability
+The $\tanh$ nonlinearity ensures that even with infinite gradients, the update remains bounded:
+$$\|\nabla S_{ent}\| \rightarrow \infty \implies \tanh(\nabla S_{ent}) \rightarrow \pm 1$$
+
+### 6.2 Robustness
+The system reduces sensitivity to outliers and extreme curvature, improving performance in noisy or "ragged" optimization landscapes.
+
+---
+
+## 7. Scope & Future Work
+
+### 🎯 Scope
+This project belongs to the fields of **Machine Learning Optimization** and **Numerical Optimization Theory**.
+
+### 🧪 Future Research
+* **Empirical Benchmarking:** Comparison against Adam and RMSProp.
+* **Stochastic Extension:**
+    $$d\theta = -\tanh(\nabla S_{ent}(\theta))\,dt + \xi(t)$$
+    Investigating convergence under controlled noise $\xi(t)$.
+
+---
+
+## 8. Clarifications & Disclaimers
+* **No Physical Frequency:** No Hz interpretation of physical hardware is included.
+* **No Hardware Model:** No material-dependent effects or physical energy models are claimed in this formal model.
+* **Exploratory History:** Previous physical analogies are considered exploratory and are not part of this formal mathematical model.
+
+---
+
+## 9. Conclusion
+The **Lanzarini Optimization Model** provides a stability-oriented modification to gradient-based methods. By introducing nonlinear saturation, it improves robustness in high-curvature and noisy optimization landscapes, offering a significant mathematical contribution to optimization theory.
+
+**Author:** Valentino Lanzarini  
+**License:** Open for Planet (OFP-L) - Version 1.0
+
 
 ## Model Versioning
 
@@ -1098,6 +1203,7 @@ This version emphasizes:
 - clearer interpretation as a dynamical optimization system  
 
 This naming is used to reflect the transition from exploratory formulations to a more rigorous mathematical framework.
+
 ---
 
 ## Intellectual Property & License

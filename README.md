@@ -1133,15 +1133,19 @@ This method is related to standard optimization frameworks like Stochastic Gradi
 
 ## 5. Spectral & Local Analysis
 
-Near a stationary point $ \theta^* $, we assume the local approximation:
-$$ \nabla S_{ent}(\theta) \approx H(\theta - \theta^*) $$
+Near a stationary point $\theta^*$, we assume the local approximation:
+
+$$\nabla S_{ent}(\theta) \approx H(\theta - \theta^*)$$
+
 where $H$ is the Hessian matrix. The linearized dynamics become:
+
 $$\frac{d\theta}{dt} \approx -H(\theta - \theta^*)$$
 
 This leads to exponential decay along the eigen-directions:
 $$\alpha_i(t) = \alpha_i(0)\exp(-\lambda_i t)$$
 
 Where $\lambda_i$ are the eigenvalues of $H$.
+
 
 
 ### ⏱️ Interpretation of Rates

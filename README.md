@@ -1081,6 +1081,23 @@ It does not constitute:
 - deeper analysis of gradient-phase coupling
 
 ---
+
+
+## Model Versioning
+
+This work is part of an evolving research direction in stability-driven optimization.
+
+The current formulation can be referenced as:
+
+**Lanzarini Model v2 (Numerical Stability Edition)**
+
+This version emphasizes:
+
+- improved numerical stability via bounded gradient updates  
+- nonlinear saturation through tanh transformation  
+- clearer interpretation as a dynamical optimization system  
+
+This naming is used to reflect the transition from exploratory formulations to a more rigorous mathematical framework.
 ---
 
 ## Intellectual Property & License

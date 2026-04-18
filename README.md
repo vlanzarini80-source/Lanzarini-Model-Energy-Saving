@@ -1310,7 +1310,6 @@ This indicates that **latency and energy are partially decoupled optimization ob
 ## 📂 Outputs
 
 - `hasip_results.csv` → full numerical results
-- `hasip_benchmark.png` → performance visualization
 
 ---
 

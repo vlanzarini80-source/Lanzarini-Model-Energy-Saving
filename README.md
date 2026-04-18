@@ -1211,6 +1211,140 @@ This naming is used to reflect the transition from exploratory formulations to a
 
 ---
 
+# 📊 HASIP Experimental Results (Colab – Tesla T4)
+
+## 🧠 Project Scope
+
+This repository studies the relationship between **structured pruning, hardware execution behavior, and energy consumption** in small-scale neural networks.
+
+The focus is not accuracy maximization, but **hardware-aware efficiency scaling** under constrained FLOP regimes.
+
+---
+
+## ⚙️ Environment
+
+- **GPU**: Tesla T4 (14.6 GB VRAM)
+- **Framework**: PyTorch 2.10.0 + CUDA 12.8
+- **Inference batch size**: 1024
+- **Precision modes**: FP32 / FP16 / INT8 (estimated)
+
+---
+
+## 📊 Experimental Results
+
+| Model        | Params   | FLOPs   | Latency FP32 (ms) | ONNX CPU (ms) | ONNX GPU (ms) | Energy (µJ) | Speedup |
+|--------------|----------|---------|-------------------|---------------|---------------|-------------|---------|
+| Base         | 185,610  | 369,664 | 0.247             | 3.99          | 0.368         | 149.9       | 1.00×   |
+| Pruned 20%   | 127,007  | 252,770 | 0.136             | 2.43          | 0.373         | 102.5       | 1.82×   |
+| Pruned 40%   | 79,369   | 157,804 | 0.101             | 2.07          | 0.347         | 64.1        | 2.44×   |
+| Pruned 60%   | 42,339   | 84,054  | 0.178             | 0.89          | 0.292         | 34.2        | 1.38×   |
+| Pruned 80%   | 15,917   | 31,520  | 0.101             | 0.37          | 0.252         | 12.9        | 2.45×   |
+
+---
+
+## 🔍 Key Findings
+
+### 1. Non-linear latency scaling
+Latency does not decrease linearly with pruning. Performance improvement stabilizes around **20–40% pruning**, where hardware utilization remains efficient.
+
+---
+
+### 2. GPU overhead dominates small models
+For small-scale networks (~370k FLOPs):
+
+- computation is negligible
+- kernel launch overhead dominates execution time
+
+➡️ Result: GPU does not fully utilize parallel capability
+
+---
+
+### 3. CPU remains competitive in low-FLOP regime
+ONNX CPU inference shows strong scaling with pruning:
+
+- 3.99 ms → 0.37 ms
+- up to **~10× improvement**
+
+➡️ CPU can outperform GPU in small-model inference scenarios
+
+---
+
+### 4. Energy scales consistently with pruning
+Energy consumption decreases monotonically:
+
+- 149.9 µJ → 12.9 µJ
+- up to **~97.8% reduction**
+
+➡️ Energy efficiency improves more reliably than latency
+
+---
+
+### 5. Optimal pruning region
+Best trade-off between speed and stability:
+
+> **20% – 40% structured pruning**
+
+- strong speedup
+- stable latency behavior
+- significant energy reduction
+
+---
+
+## 📈 Core Insight
+
+> Model compression does not guarantee GPU speedup, but it consistently improves energy efficiency.
+
+This indicates that **latency and energy are partially decoupled optimization objectives** in small-model regimes.
+
+---
+
+## ⚠️ Limitations
+
+- Experiments are conducted on a **small MLP (~370k FLOPs)**
+- Energy values are **estimates based on analytical modeling**
+- ONNX GPU execution does not include TensorRT optimization
+- Results may not generalize to Transformer-scale architectures
+
+---
+
+## 📂 Outputs
+
+- `hasip_results.csv` → full numerical results
+- `hasip_benchmark.png` → performance visualization
+
+---
+
+## 🔬 Reproducibility
+
+All experiments were executed on Google Colab using:
+
+- PyTorch inference benchmarking
+- ONNX Runtime (CPU + CUDA)
+- Structured pruning via layer reconstruction
+- Analytical energy estimation model
+
+---
+
+## 🚀 Future Work
+
+- Scaling analysis to Transformer architectures (BERT / GPT)
+- Real hardware power measurement (NVML / RAPL)
+- Integration with compiler-level optimizations (TensorRT, TVM)
+- Extension to entropy-based structural pruning models
+
+---
+
+## 📌 Conclusion
+
+In small neural networks, **hardware constraints dominate algorithmic efficiency**.
+
+This study shows that:
+
+> reducing model size primarily improves energy efficiency, while latency improvements depend strongly on hardware execution overhead.
+>
+> 
+---
+
 ## Intellectual Property & License
 All technical logic and coefficients (EC-2.99) are the exclusive property of Valentino Lanzarini.
 - Commercial use is strictly prohibited without explicit consent.

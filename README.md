@@ -1332,6 +1332,12 @@ All experiments were executed on Google Colab using:
 - Integration with compiler-level optimizations (TensorRT, TVM)
 - Extension to entropy-based structural pruning models
 
+- 📄 Paper (LaTeX source)
+
+The full NeurIPS-style paper is available in this repository:
+
+👉 `hasip_neurips_paper.tex`
+
 ---
 
 ## 📌 Conclusion

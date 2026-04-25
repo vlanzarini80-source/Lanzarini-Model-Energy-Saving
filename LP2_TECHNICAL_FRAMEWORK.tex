@@ -1,0 +1,72 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{geometry}
+\usepackage{hyperref}
+
+\geometry{margin=2.5cm}
+
+\title{Lanzarini Model LP-2: Phase-Coherent Magnonic Computing Framework \\ \large A Geometric Inverse-Design Approach for Energy-Efficient AI}
+\author{Valentino Lanzarini \\ \textit{Principal Author \& Founder} \\ Open for Planet (OFP-L)}
+\date{Draft v0.2 - April 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+[span_3](start_span)[span_4](start_span)The LP-2 framework introduces a magnonic computing architecture designed to minimize energy dissipation during neural network inference[span_3](end_span)[span_4](end_span). [span_5](start_span)[span_6](start_span)The central contribution is a formal mapping between the Entropy Abatement Coefficient (CAE) and the configurational Gilbert damping $\alpha_{eff}$ of spin-wave waveguides fabricated on Yttrium Iron Garnet (YIG) substrates[span_5](end_span)[span_6](end_span). [span_7](start_span)[span_8](start_span)Using an inverse-design approach, device geometry is optimized to suppress magnon scattering[span_7](end_span)[span_8](end_span). [span_9](start_span)[span_10](start_span)A dual-frequency architecture separates GHz-scale computation from a 2.99 Hz adiabatic reset protocol for phonon relaxation management[span_9](end_span)[span_10](end_span).
+\end{abstract}
+
+\section{Configurational Damping via Inverse Design}
+[span_11](start_span)Spin-wave dynamics are governed by the Landau-Lifshitz-Gilbert (LLG) equation[span_11](end_span). In the LP-2 model, we define the effective damping $\alpha_{eff}$ as a function of the software-layer optimization metric (CAE):
+
+\begin{equation}
+\alpha_{eff} = \alpha_{0} (1 + \lambda (1 - CAE))
+\end{equation}
+
+[span_12](start_span)[span_13](start_span)Where $\alpha_{0}$ is the intrinsic material damping and $CAE$ represents the entropy reduction coefficient[span_12](end_span)[span_13](end_span). [span_14](start_span)[span_15](start_span)In this paradigm, CAE serves as the objective function for the lithographic synthesis of waveguide geometry, minimizing scattering induced by geometric imperfections[span_14](end_span)[span_15](end_span).
+
+\section{Dual-Frequency Architecture (2.99 Hz / GHz)}
+[span_16](start_span)[span_17](start_span)The system operates across two physically distinct timescales[span_16](end_span)[span_17](end_span):
+\begin{itemize}
+    [span_18](start_span)[span_19](start_span)\item \textbf{Computational Layer ($f_{c} \approx 1-10$ GHz):} Spin-wave interference for ultra-fast, low-energy logic[span_18](end_span)[span_19](end_span).
+    [span_20](start_span)[span_21](start_span)\item \textbf{Adiabatic Reset Protocol ($f_{sync} = 2.99$ Hz):} A synchronization "heartbeat" allowing for phonon relaxation within the substrate[span_20](end_span)[span_21](end_span).
+\end{itemize}
+
+[span_22](start_span)[span_23](start_span)The reset period $T_{reset} \approx 334$ ms ensures that each computational burst begins from a state of thermal equilibrium, preventing entropic noise accumulation[span_22](end_span)[span_23](end_span).
+
+\section{Phase-Encoded Weights and Reversible Logic}
+[span_24](start_span)[span_25](start_span)Neural network weights are mapped into discrete phase states[span_24](end_span)[span_25](end_span):
+\begin{equation}
+\phi = \begin{cases} 0 & \text{if } \sigma_{w} > 0 \\ \pi & \text{if } \sigma_{w} < 0 \end{cases}
+\end{equation}
+[span_26](start_span)The utilization of Magnonic Directional Couplers (MDC) enables logic operations (AND/OR) through constructive and destructive wave interference[span_26](end_span). [span_27](start_span)[span_28](start_span)This targets the Landauer limit through logically reversible computation[span_27](end_span)[span_28](end_span).
+
+\section{Validation Roadmap (MuMax3)}
+[span_29](start_span)[span_30](start_span)The framework outlines three micromagnetic validation phases[span_29](end_span)[span_30](end_span):
+\begin{enumerate}
+    [span_31](start_span)\item Baseline characterization of YIG waveguides[span_31](end_span).
+    [span_32](start_span)\item Parametric inverse-design sweep to correlate CAE with $\alpha_{eff}$ reduction[span_32](end_span).
+    [span_33](start_span)[span_34](start_span)\item Verification of MDC logic gates and quantitative energy-efficiency comparison against CMOS[span_33](end_span)[span_34](end_span).
+\end{enumerate}
+
+\vspace{2cm}
+
+\hrule
+\vspace{0.5cm}
+
+\section*{Intellectual Property \& Paternity Protection}
+[span_35](start_span)[span_36](start_span)\textbf{Declaration of Origin:} This document serves as a formal, immutable record of intellectual property[span_35](end_span)[span_36](end_span).
+\begin{itemize}
+    [span_37](start_span)[span_38](start_span)\item \textbf{Author:} Valentino Lanzarini[span_37](end_span)[span_38](end_span).
+    [span_39](start_span)[span_40](start_span)\item \textbf{Original Discovery Date:} March 15, 2026[span_39](end_span)[span_40](end_span).
+    [span_41](start_span)[span_42](start_span)\item \textbf{Core Assets:} Lanzarini Model (Geodetic-Entropic Optimization), LP-1/LP-2 Architectures, CAE Algorithm, 2.99 Hz Resonance Protocol, and EC-2.99/FGC protocols[span_41](end_span)[span_42](end_span).
+    [span_43](start_span)[span_44](start_span)\item \textbf{License:} Open for Planet (OFP-L) v1.0[span_43](end_span)[span_44](end_span). [span_45](start_span)[span_46](start_span)All industrial implementations and derivative works must comply with the sustainability mandates and carbon-capture reinvestment clauses defined in the OFP-L protocol[span_45](end_span)[span_46](end_span).
+\end{itemize}
+
+\textit{This record establishes 'Prior Art' and 'Proof of Origin' for all computational results, technical derivations, and architectures related to the Lanzarini Model.}
+
+\end{document}

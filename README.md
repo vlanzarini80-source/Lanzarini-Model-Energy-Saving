@@ -52,6 +52,38 @@ This project and all derivative technical logic are the exclusive intellectual p
 
 *This record serves as an immutable 'Proof of Origin' and 'Prior Art' timestamp, establishing the formal discovery and technical paternity of the Lanzarini Model.*
 
+---
+
+## 🔬 Research Evolution & Empirical Validation
+
+The development of the **Lanzarini Model** follows a rigorous scientific methodology, moving from statistical falsification to physical-layer implementation.
+
+### Phase 1: Statistical Bound Analysis (V1-V17)
+Before establishing the current magnonic framework, an extensive experimental series was conducted to test the limits of software-only optimization.
+
+* **Objective:** Evaluation of 17 iterations of custom curvature-based optimizers (including K-FAC approximations and EMA stabilization).
+* **Finding:** Empirical data confirmed that lightweight statistical proxies cannot consistently outperform standard baselines (AdamW) in terms of energy-loss efficiency.
+* **Significance:** These "negative results" provided the necessary scientific evidence to transition from pure software to **Geodetic-Entropic Optimization (GEO)**.
+
+👉 **[View Experimental Logs & LaTeX Source](./Statistical_Stress_Tests_V1_V17.tex)**
+
+### Phase 2: The LP-2 Framework (Current)
+Building on the insights from Phase 1, the **LP-2 Framework** addresses the computational "heat wall" by shifting the logic to phase-coherent spin waves.
+
+* **Core Innovation:** Establishing a formal bridge between the software-layer Entropy Abatement Coefficient (CAE) and the hardware-layer Gilbert damping ($\alpha_{eff}$).
+* **Thermal Management:** Implementation of the **2.99 Hz Adiabatic Reset Protocol** to ensure phonon relaxation and near-zero thermal dissipation.
+* **Validation:** Transition to micromagnetic simulations using the MuMax3 roadmap.
+
+---
+
+## ⚖️ Intellectual Property & Paternity Notice
+
+**Author:** Valentino Lanzarini  
+**Official Discovery Date:** March 15, 2026  
+**License:** Open for Planet (OFP-L) - Version 1.0
+
+This record serves as an immutable proof of origin and prior art. All derivative technical logic, including the EC-2.99 resonance protocol and CAE algorithms, are the exclusive intellectual property of the author.
+
 
 
 # LANZARINI MODEL - GENESIS & NEURAL-CORE (V11.0)

@@ -1,0 +1,194 @@
+\documentclass{article}
+\usepackage{amsmath, amssymb, graphicx}
+
+\title{Status Report: Lanzarini Optimizer Series (V18--Final Benchmark)}
+\author{Experimental Optimization Study}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Overview}
+
+This document summarizes the current state of the Lanzarini Optimizer research, including all experimental stages from early variants (V18--V21) to the final benchmark comparison against standard optimization algorithms.
+
+The goal of this report is to provide a clear, reproducible and structured description of:
+\begin{itemize}
+    \item optimization formulation
+    \item experimental setup
+    \item observed results
+    \item current interpretation of findings
+\end{itemize}
+
+\section{Core Optimization Framework}
+
+We consider the standard optimization problem:
+\[
+\min_{\theta} \mathcal{L}(\theta)
+\]
+
+The general update rule used in the Lanzarini framework is defined as:
+
+\begin{equation}
+\Delta \theta_t = \alpha \cdot u_t^{(Adam)} + (1 - \alpha) \cdot u_t^{(grad)}
+\end{equation}
+
+where:
+
+\begin{itemize}
+    \item $u_t^{(Adam)}$ is the Adam-style adaptive direction
+    \item $u_t^{(grad)}$ is the raw gradient direction
+    \item $\alpha \in [0,1]$ is a mixing coefficient
+\end{itemize}
+
+In later versions, $\alpha$ was either:
+\begin{itemize}
+    \item fixed (V19--V20)
+    \item learned via policy (V21)
+    \item empirically optimized (final benchmark)
+\end{itemize}
+
+\section{Experimental Setup}
+
+All experiments were conducted under controlled conditions:
+
+\begin{itemize}
+    \item Multiple random seeds (5 per method)
+    \item Quadratic synthetic objective (initial phase)
+    \item CIFAR-style benchmark (final phase)
+    \item Fixed learning rate across methods
+    \item Same initialization distribution
+\end{itemize}
+
+Methods compared:
+
+\begin{itemize}
+    \item SGD with momentum
+    \item Adagrad
+    \item RMSProp
+    \item Adam
+    \item AdamW
+    \item Lanzarini (adaptive interpolation)
+\end{itemize}
+
+\section{Quadratic Benchmark Results}
+
+Initial experiments were conducted on a quadratic convex optimization problem:
+
+\begin{itemize}
+    \item Lanzarini showed faster convergence than Adam in terms of iterations
+    \item Reduced number of steps to reach target loss
+    \item Improved stability compared to unconstrained interpolation variants (V18)
+\end{itemize}
+
+Key observation:
+\begin{equation}
+\text{Performance gain correlates strongly with interpolation between gradient directions}
+\end{equation}
+
+\section{4-Way Ablation Study}
+
+Ablation results comparing different interpolation strategies:
+
+\begin{itemize}
+    \item Adam baseline
+    \item Fixed interpolation
+    \item Random interpolation
+    \item V21 learned policy
+\end{itemize}
+
+Result pattern:
+
+\begin{itemize}
+    \item All interpolation methods significantly outperform SGD
+    \item Differences between fixed, random, and learned policies are smaller than expected
+    \item Learned policy (V21) does not consistently dominate simpler alternatives
+\end{itemize}
+
+\section{Oracle and Decay Tests}
+
+Additional experiments:
+
+\begin{itemize}
+    \item Oracle optimal constant $\alpha$
+    \item Linear, cosine, and step decay schedules
+\end{itemize}
+
+Observation:
+
+\begin{itemize}
+    \item A near-optimal constant $\alpha$ achieves performance close to or better than learned policy
+    \item Simple scheduling strategies can match or exceed learned control in some settings
+\end{itemize}
+
+\section{Final Benchmark (Realistic Setup)}
+
+Final evaluation on extended benchmark with multiple optimizers:
+
+\begin{verbatim}
+Methods evaluated:
+- SGD
+- Adagrad
+- RMSProp
+- Adam
+- AdamW
+- Lanzarini (alpha interpolation)
+\end{verbatim}
+
+Measured metrics:
+\begin{itemize}
+    \item Final loss
+    \item Standard deviation across seeds
+    \item Execution time
+    \item Composite score (loss × time)
+\end{itemize}
+
+\section{Key Results (Observed)}
+
+\begin{itemize}
+    \item Lanzarini achieves the lowest loss among tested methods
+    \item RMSProp is second best in stability-performance tradeoff
+    \item Adam and AdamW show similar performance in this setup
+    \item SGD and Adagrad perform significantly worse
+\end{itemize}
+
+\section{Current Interpretation}
+
+Based on all experiments, the following hypotheses are under evaluation:
+
+\subsection{H1: Learned control advantage}
+Performance improvement comes from adaptive policy selection.
+
+\subsection{H2: Interpolation effect}
+Performance improvement is primarily due to convex combination of two update directions.
+
+\subsection{H3: Variance reduction}
+Performance improvement is caused by reduction in update variance rather than information content.
+
+Current evidence suggests:
+
+\begin{itemize}
+    \item Strong contribution from interpolation structure
+    \item Weak additional gain from learned policy in current experiments
+    \item Significant reduction in variance of updates correlates with performance gain
+\end{itemize}
+
+\section{Conclusion}
+
+The Lanzarini optimizer series demonstrates that:
+
+\begin{itemize}
+    \item Combining gradient-based and adaptive directions improves convergence stability
+    \item The structure of interpolation plays a dominant role in performance gains
+    \item Learned control policies provide limited additional benefit in current experimental conditions
+\end{itemize}
+
+Further work is required to:
+\begin{itemize}
+    \item test on larger-scale deep learning tasks
+    \item isolate variance reduction effects from true adaptive behavior
+    \item evaluate generalization across architectures
+\end{itemize}
+
+\end{document}

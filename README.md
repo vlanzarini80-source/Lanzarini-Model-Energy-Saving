@@ -76,6 +76,19 @@ Building on the insights from Phase 1, the **LP-2 Framework** addresses the comp
 
 ---
 
+## 🏆 V21 Breakthrough: Competitive Benchmark
+
+The evolution of the research has culminated in the **V21 series**, where the **Lanzarini Optimizer** successfully outperformed industry standards in comparative empirical tests.
+
+* **Result:** Achieved the lowest final Loss compared to Adam, AdamW, and RMSProp.
+* **Methodology:** Adaptive Gradient Interpolation (AGI) for variance stabilization.
+* **Validation:** Multi-seed testing (5 seeds) with statistically significant results.
+* **Scope:** Validated on controlled benchmarks; large-scale (LLM) testing is currently in the planning phase.
+
+👉 **[Read the Final Technical Report (V21)](./Lanzarini_Final_Benchmark_Report_V21.tex)**
+
+---
+
 ## ⚖️ Intellectual Property & Paternity Notice
 
 **Author:** Valentino Lanzarini  

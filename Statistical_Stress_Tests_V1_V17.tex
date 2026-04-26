@@ -4,3 +4,189 @@
 % Note: This document records the empirical testing of statistical 
 % curvature proxies (V1-V17) which led to the development of the LP-2 Framework.
 
+
+\documentclass{article}
+\usepackage{amsmath, amssymb, graphicx}
+\usepackage{booktabs}
+
+\title{Lanzarini Optimizer Series: Empirical Study of Curvature-Based Optimization from V1 to V17}
+\author{Experimental AI Research Log}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Abstract}
+
+This document summarizes a full experimental exploration of custom optimization algorithms (V1–V17) designed to incorporate curvature, energy-aware updates, and K-FAC-like approximations into gradient-based learning. We analyze convergence, stability, and energy efficiency compared to AdamW.
+
+\section{Introduction}
+
+The goal of this study was to investigate whether curvature-aware optimizers can outperform standard first-order methods such as AdamW by introducing:
+
+\begin{itemize}
+    \item curvature proxies
+    \item energy-aware updates
+    \item Fisher/K-FAC approximations
+    \item compression-based gradient transformations
+\end{itemize}
+
+\section{Methodology Overview}
+
+All experiments used a consistent neural architecture:
+
+\begin{itemize}
+    \item Embedding layer (1000 $\rightarrow$ 64)
+    \item Linear layers (64 $\rightarrow$ 128 $\rightarrow$ 1000)
+    \item Cross entropy loss
+    \item Sequence prediction task
+\end{itemize}
+
+Each optimizer was evaluated over multiple seeds with metrics:
+
+\begin{itemize}
+    \item Final loss
+    \item Energy (sum of gradient magnitudes)
+    \item Stability (variance of loss)
+    \item Efficiency (loss / energy)
+\end{itemize}
+
+\section{Evolution of Optimizers}
+
+\subsection{V1–V4: Early Curvature Proxies}
+
+Initial versions attempted to incorporate:
+\begin{itemize}
+    \item curvature approximations via smoothing
+    \item geometric updates
+\end{itemize}
+
+\textbf{Observation:}
+No consistent improvement over AdamW.
+
+\subsection{V5–V9: Compression-Based Methods}
+
+Introduced:
+\begin{itemize}
+    \item gradient compression
+    \item reduced update cost
+\end{itemize}
+
+\textbf{Result:}
+Loss remained near baseline but no learning advantage observed.
+
+\subsection{V10–V11: Hessian-Free Inspired Updates}
+
+Introduced curvature proxies inspired by:
+\begin{itemize}
+    \item diagonal Hessian approximations
+    \item trust-region style updates
+\end{itemize}
+
+\textbf{Result:}
+Some unstable improvements, but inconsistent convergence.
+
+\subsection{V12–V13: Instability Phase}
+
+Large variance and unstable updates were observed:
+
+\begin{itemize}
+    \item loss spikes
+    \item energy explosion
+\end{itemize}
+
+\textbf{Conclusion:}
+Over-aggressive curvature modeling breaks optimization stability.
+
+\subsection{V14–V15: Layer-wise Curvature Scaling}
+
+Introduced layer-wise curvature scaling.
+
+\textbf{Observation:}
+\begin{itemize}
+    \item stable training
+    \item but no improvement in loss
+    \item efficiency comparable or worse than AdamW
+\end{itemize}
+
+\subsection{V16: K-FAC Lite Approximation}
+
+Attempted Kronecker-factorized curvature approximation.
+
+\textbf{Issue:}
+\begin{itemize}
+    \item shape mismatches
+    \item unstable matrix approximations
+    \item loss degradation
+\end{itemize}
+
+Final result:
+
+\begin{itemize}
+    \item Adam loss $\approx 2.85$
+    \item V16 loss $\approx 6.92$
+    \item higher energy consumption
+\end{itemize}
+
+\subsection{V17: EMA Stabilized K-FAC Light}
+
+Final version introduced:
+\begin{itemize}
+    \item exponential moving average of curvature
+    \item diagonal preconditioning
+    \item memory-safe approximation
+\end{itemize}
+
+\section{Final Experimental Results}
+
+\subsection{AdamW Baseline}
+
+\begin{itemize}
+    \item Loss: 2.85
+    \item Energy: 64.84
+    \item Efficiency: 0.0439
+\end{itemize}
+
+\subsection{V17 Optimizer}
+
+\begin{itemize}
+    \item Loss: 6.92
+    \item Energy: 445.34
+    \item Efficiency: 0.0155
+\end{itemize}
+
+\section{Key Findings}
+
+\subsection{1. Curvature Proxies Are Insufficient}
+
+Simple diagonal or averaged curvature estimates fail to preserve meaningful second-order information.
+
+\subsection{2. Normalization Destroys Gradient Signal}
+
+Excessive normalization removes magnitude information essential for convergence.
+
+\subsection{3. Lightweight K-FAC Approximations Are Not Effective}
+
+Without eigenspectrum information, approximations behave as re-weighting operators rather than true preconditioners.
+
+\section{Conclusion}
+
+Across all tested versions (V1–V17), no optimizer consistently outperformed AdamW in terms of loss and efficiency.
+
+However, the study reveals:
+
+\begin{itemize}
+    \item key failure modes of curvature-based optimizers
+    \item instability of naive second-order approximations
+    \item importance of preserving spectral information
+\end{itemize}
+
+\textbf{Final Insight:}
+
+\begin{quote}
+Lightweight curvature approximations without eigenspace structure do not provide meaningful optimization benefits over first-order methods.
+\end{quote}
+
+\end{document}
+

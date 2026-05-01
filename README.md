@@ -1,3 +1,5 @@
+* **Theoretical Research:** [Transient Correspondence Between Krylov Complexity and Information Geometry (PDF)](./Lanzarini_KrylovComplexity_GENERIC.pdf)
+
 ---
 
 ## 🏛️ Theoretical Novelty & Scientific Positioning

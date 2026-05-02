@@ -1,3 +1,23 @@
+# Lanzarini Model: Geodetic-Entropic Optimization
+
+**Author:** Valentino Lanzarini  
+**Official Discovery Date:** March 15, 2026  
+**Document Date:** May 2, 2026  
+**License:** Open for Planet (OFP-L) - Version 1.0  
+
+## 🏛️ Project Identity
+The Lanzarini Model (LP-1/LP-2) is a theoretical and computational framework designed to achieve a 58% reduction in AI energy consumption. 
+
+### 📜 Technical Documentation
+- **Technical Whitepaper (May 2026):** [Lanzarini_Framework_Technical_Whitepaper.tex](./Lanzarini_Framework_Technical_Whitepaper.tex) - *Includes EDC and 1T Scaling Analysis.*
+- **Theoretical Physics Paper:** [Transient Correspondence Between Krylov Complexity and Information Geometry](./Lanzarini_KrylovComplexity_GENERIC.pdf)
+
+### 🚀 Key Benchmarks
+- **Energy Saving:** -58.42% (Validated March 25, 2026)
+- **Throughput:** +16% on 1T parameter models.
+- **Stability:** 18.1 dB Gradient SNR.
+
+
 * **Theoretical Research:** [Transient Correspondence Between Krylov Complexity and Information Geometry (PDF)](./Lanzarini_KrylovComplexity_GENERIC.pdf)
 
 ---

@@ -1,3 +1,10 @@
+## 🧪 Experimental Validation & Case Studies
+* **[Energy-Aware Clustered Attention (May 3, 2026)](./Lanzarini_2026_Energy_Aware_Clustered_Attention.pdf)**
+  * *Focus:* Direct physical energy measurement (NVML) on NVIDIA hardware.
+  * *Key Finding:* Achieved **22.8% energy reduction**, identifying the non-monotonic trade-off between algorithmic compression and power draw.
+  * *Anomaly Analysis:* Detailed documentation of the "V6" failure mode where over-compression increases power dissipation.
+
+
 # Lanzarini Model: Geodetic-Entropic Optimization
 
 **Author:** Valentino Lanzarini  
